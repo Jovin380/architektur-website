@@ -39,10 +39,13 @@
       "mainEntity": {
         "@type": "ItemList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Wohnquartier Treptow", "url": "https://www.sinke-planung.de/projekt-wohnquartier-treptow.html" },
-          { "@type": "ListItem", "position": 2, "name": "Grundschule Lichtenberg", "url": "https://www.sinke-planung.de/projekt-schule-lichtenberg.html" },
-          { "@type": "ListItem", "position": 3, "name": "Gewerbehof Mitte", "url": "https://www.sinke-planung.de/projekt-gewerbehof-mitte.html" },
-          { "@type": "ListItem", "position": 4, "name": "Sanierung Schöneberg", "url": "https://www.sinke-planung.de/projekt-sanierung-schoeneberg.html" }
+          { "@type": "ListItem", "position": 1, "name": "Marienfelde" },
+          { "@type": "ListItem", "position": 2, "name": "Saarbrücker Straße" },
+          { "@type": "ListItem", "position": 3, "name": "Wohnungssanierung Mehringdamm" },
+          { "@type": "ListItem", "position": 4, "name": "Spreedreieck" },
+          { "@type": "ListItem", "position": 5, "name": "BootHub" },
+          { "@type": "ListItem", "position": 6, "name": "Corde des Alps" },
+          { "@type": "ListItem", "position": 7, "name": "Glockenweiß" }
         ]
       }
     }
@@ -100,77 +103,59 @@
         <p class="muted mt-2">Eine Auswahl von Projekten aus unserer bisherigen Tätigkeit – teils in leitender Rolle in vorherigen Büros verantwortet.</p>
       </div>
       <div class="reveal">
-        <p class="lead">Eine Auswahl realisierter Projekte – vom Wohnquartier über die Schule bis zum Gewerbebau. Filtern Sie nach Bauaufgabe.</p>
+        <p class="lead">Eine Auswahl realisierter Projekte – vom Wohnungsbau über die Sanierung bis zum Gewerbebau.</p>
       </div>
     </div>
   </section>
 
   <section class="section wrap" style="padding-top:clamp(2rem,5vw,3.5rem)">
-    <div class="filters reveal" role="group" aria-label="Projekte filtern">
-      <button class="filter" data-filter="alle" aria-pressed="true">Alle</button>
-      <button class="filter" data-filter="wohnen" aria-pressed="false">Wohnungsbau</button>
-      <button class="filter" data-filter="bildung" aria-pressed="false">Bildungsbau</button>
-      <button class="filter" data-filter="gewerbe" aria-pressed="false">Gewerbe &amp; Büro</button>
-      <button class="filter" data-filter="bestand" aria-pressed="false">Bestand</button>
-    </div>
-
     <div class="projects projects--3">
 
-      <a class="project reveal" href="projekt-wohnquartier-treptow.html" data-cat="wohnen">
+      <figure class="project reveal">
         <div class="project__media"><span class="project__cat">Wohnungsbau</span>
-          <img src="assets/img/ph-wohnen.svg" width="1200" height="900" loading="lazy" decoding="async" alt="Wohnquartier in Berlin-Treptow mit 148 Wohneinheiten"></div>
-        <div class="project__body"><h2 class="project__title">Wohnquartier Treptow</h2><div class="project__meta">Berlin · 2023<br>148 WE</div></div>
-      </a>
+          <img data-zoom src="assets/img/Projekt_7_Marienenfelde/Bild1.png" width="607" height="523" loading="lazy" decoding="async" alt="Wohnbauprojekt in Berlin-Marienfelde"></div>
+        <figcaption class="project__body"><h2 class="project__title">Marienfelde</h2><div class="project__meta">Wohnungsbau · Berlin</div></figcaption>
+      </figure>
 
-      <!-- TODO: eigene Detailseite anlegen (Vorlage: projekt-wohnquartier-treptow.html) und Link anpassen -->
-      <a class="project reveal" href="projekt-wohnquartier-treptow.html" data-cat="wohnen">
+      <figure class="project reveal">
         <div class="project__media"><span class="project__cat">Wohnungsbau</span>
-          <img src="assets/img/ph-wohnen.svg" width="1200" height="900" loading="lazy" decoding="async" alt="Wohnhäuser in Berlin-Pankow – geförderter Wohnungsbau"></div>
-        <div class="project__body"><h2 class="project__title">Wohnhäuser Pankow</h2><div class="project__meta">Berlin · 2022<br>96 WE</div></div>
-      </a>
+          <img data-zoom src="assets/img/Projekt_1_Saarbr%C3%BCckenstra%C3%9Fe/BIld2.png" width="538" height="385" loading="lazy" decoding="async" alt="Wohnbauprojekt Saarbrücker Straße in Berlin"></div>
+        <figcaption class="project__body"><h2 class="project__title">Saarbrücker Straße</h2><div class="project__meta">Wohnungsbau · Berlin</div></figcaption>
+      </figure>
 
-      <!-- TODO: eigene Detailseite anlegen -->
-      <a class="project reveal" href="projekt-wohnquartier-treptow.html" data-cat="wohnen">
-        <div class="project__media"><span class="project__cat">Wohnungsbau</span>
-          <img src="assets/img/ph-wohnen.svg" width="1200" height="900" loading="lazy" decoding="async" alt="Wohnquartier in Berlin Marzahn-Hellersdorf – Nachverdichtung"></div>
-        <div class="project__body"><h2 class="project__title">Quartier Marzahn</h2><div class="project__meta">Berlin · 2024<br>210 WE</div></div>
-      </a>
-
-      <a class="project reveal" href="projekt-schule-lichtenberg.html" data-cat="bildung">
-        <div class="project__media"><span class="project__cat">Bildungsbau</span>
-          <img src="assets/img/ph-bildung.svg" width="1200" height="900" loading="lazy" decoding="async" alt="Grundschule in Berlin-Lichtenberg mit Sporthalle – Schulneubau"></div>
-        <div class="project__body"><h2 class="project__title">Grundschule Lichtenberg</h2><div class="project__meta">Berlin · 2022<br>Neubau</div></div>
-      </a>
-
-      <!-- TODO: eigene Detailseite anlegen -->
-      <a class="project reveal" href="projekt-schule-lichtenberg.html" data-cat="bildung">
-        <div class="project__media"><span class="project__cat">Bildungsbau</span>
-          <img src="assets/img/ph-bildung.svg" width="1200" height="900" loading="lazy" decoding="async" alt="Sporthalle in Berlin-Neukölln – Neubau einer Dreifeldhalle"></div>
-        <div class="project__body"><h2 class="project__title">Sporthalle Neukölln</h2><div class="project__meta">Berlin · 2023<br>Neubau</div></div>
-      </a>
-
-      <a class="project reveal" href="projekt-gewerbehof-mitte.html" data-cat="gewerbe">
-        <div class="project__media"><span class="project__cat">Gewerbe &amp; Büro</span>
-          <img src="assets/img/ph-gewerbe.svg" width="1200" height="900" loading="lazy" decoding="async" alt="Gewerbehof mit Bürogebäude in Berlin-Mitte"></div>
-        <div class="project__body"><h2 class="project__title">Gewerbehof Mitte</h2><div class="project__meta">Berlin · 2021<br>Neubau</div></div>
-      </a>
-
-      <!-- TODO: eigene Detailseite anlegen -->
-      <a class="project reveal" href="projekt-gewerbehof-mitte.html" data-cat="gewerbe">
-        <div class="project__media"><span class="project__cat">Gewerbe &amp; Büro</span>
-          <img src="assets/img/ph-gewerbe.svg" width="1200" height="900" loading="lazy" decoding="async" alt="Bürogebäude in Berlin-Friedrichshain – Neubau mit flexiblen Grundrissen"></div>
-        <div class="project__body"><h2 class="project__title">Bürogebäude Friedrichshain</h2><div class="project__meta">Berlin · 2020<br>Neubau</div></div>
-      </a>
-
-      <a class="project reveal" href="projekt-sanierung-schoeneberg.html" data-cat="bestand">
+      <figure class="project reveal">
         <div class="project__media"><span class="project__cat">Bestand</span>
-          <img src="assets/img/ph-bestand.svg" width="1200" height="900" loading="lazy" decoding="async" alt="Sanierung und Aufstockung eines Altbaus in Berlin-Schöneberg"></div>
-        <div class="project__body"><h2 class="project__title">Sanierung Schöneberg</h2><div class="project__meta">Berlin · 2023<br>Bestand</div></div>
-      </a>
+          <img data-zoom src="assets/img/Projekt_4_Wohnungssanierung_Mehringdamm/Bild1.png" width="609" height="526" loading="lazy" decoding="async" alt="Wohnungssanierung am Mehringdamm in Berlin"></div>
+        <figcaption class="project__body"><h2 class="project__title">Wohnungssanierung Mehringdamm</h2><div class="project__meta">Sanierung · Berlin</div></figcaption>
+      </figure>
+
+      <figure class="project reveal">
+        <div class="project__media"><span class="project__cat">Gewerbe &amp; Büro</span>
+          <img data-zoom src="assets/img/Projekt_6_Spreedreieck/Bild1.png" width="609" height="523" loading="lazy" decoding="async" alt="Bauvorhaben Spreedreieck in Berlin"></div>
+        <figcaption class="project__body"><h2 class="project__title">Spreedreieck</h2><div class="project__meta">Gewerbe &amp; Büro · Berlin</div></figcaption>
+      </figure>
+
+      <figure class="project reveal">
+        <div class="project__media"><span class="project__cat">Gewerbe &amp; Büro</span>
+          <img data-zoom src="assets/img/Projekt_2_BootHub/Bild1.png" width="679" height="397" loading="lazy" decoding="async" alt="Gewerbeprojekt BootHub in Berlin"></div>
+        <figcaption class="project__body"><h2 class="project__title">BootHub</h2><div class="project__meta">Gewerbe &amp; Büro</div></figcaption>
+      </figure>
+
+      <figure class="project reveal">
+        <div class="project__media"><span class="project__cat">Innenausbau</span>
+          <img data-zoom src="assets/img/Projekt_3_Cordedesalps/Bild1.png" width="757" height="652" loading="lazy" decoding="async" alt="Innenausbau-Projekt Corde des Alps"></div>
+        <figcaption class="project__body"><h2 class="project__title">Corde des Alps</h2><div class="project__meta">Innenausbau</div></figcaption>
+      </figure>
+
+      <figure class="project reveal">
+        <div class="project__media"><span class="project__cat">Wohnungsbau</span>
+          <img data-zoom src="assets/img/Projekt_5_Glockenwei%C3%9F/Bild1.png" width="610" height="525" loading="lazy" decoding="async" alt="Wohnbauprojekt Glockenweiß in Berlin"></div>
+        <figcaption class="project__body"><h2 class="project__title">Glockenweiß</h2><div class="project__meta">Wohnungsbau · Berlin</div></figcaption>
+      </figure>
 
     </div>
 
-    <p class="muted mt-3" style="border-top:1px solid var(--line);padding-top:1.5rem">Auswahl aus über 40 Projekten, die wir in unserer bisherigen Tätigkeit begleitet haben – teils in leitender Rolle in vorherigen Büros. Weitere Referenzen und Leistungsnachweise senden wir Ihnen auf Anfrage zu.</p>
+    <p class="muted mt-3" style="border-top:1px solid var(--line);padding-top:1.5rem">Eine Auswahl aus Projekten, die wir in unserer bisherigen Tätigkeit begleitet haben – teils in leitender Rolle in vorherigen Büros. Weitere Referenzen und Leistungsnachweise senden wir Ihnen auf Anfrage zu.</p>
   </section>
 
 </main>
