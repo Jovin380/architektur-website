@@ -516,3 +516,26 @@ address { font-style: normal; line-height: 1.9; }
 .hero-bg .lead { color: rgba(255,255,255,0.92); max-width: 42ch; }
 .hero-bg .btn--ghost { --_fg: #fff; border-color: rgba(255,255,255,0.55); }
 .hero-bg .btn--ghost:hover { --_bg: #fff; --_fg: var(--ink); border-color: #fff; }
+
+/* Transparenter Header, der oben über dem Hero-Bild liegt (nur Startseite).
+   Beim Scrollen (is-scrolled) wird die Leiste wieder deckend. */
+body.has-overlay-header .site-header {
+  position: fixed; left: 0; right: 0; top: 0;
+  background: transparent; backdrop-filter: none; border-bottom-color: transparent;
+}
+body.has-overlay-header .hero-bg { min-height: 100vh; }
+body.has-overlay-header .site-header:not(.is-scrolled) .brand,
+body.has-overlay-header .site-header:not(.is-scrolled) .brand b { color: #fff; }
+body.has-overlay-header .site-header:not(.is-scrolled) .brand small { color: rgba(255,255,255,0.72); }
+body.has-overlay-header .site-header:not(.is-scrolled) .nav__links a { color: rgba(255,255,255,0.9); }
+body.has-overlay-header .site-header:not(.is-scrolled) .nav__links a:hover,
+body.has-overlay-header .site-header:not(.is-scrolled) .nav__links a[aria-current="page"] { color: #fff; }
+body.has-overlay-header .site-header:not(.is-scrolled) .nav__links a::after { background: #fff; }
+body.has-overlay-header .site-header:not(.is-scrolled) .nav__toggle span { background: #fff; }
+body.has-overlay-header .site-header:not(.is-scrolled) .nav__cta { --_fg: #fff; color: #fff; border-color: rgba(255,255,255,0.5); }
+body.has-overlay-header .site-header:not(.is-scrolled) .nav__cta:hover { --_bg: #fff; --_fg: var(--ink); border-color: #fff; }
+body.has-overlay-header .site-header.is-scrolled {
+  background: color-mix(in srgb, var(--paper) 88%, transparent);
+  backdrop-filter: saturate(1.4) blur(10px);
+  border-bottom-color: var(--line);
+}
