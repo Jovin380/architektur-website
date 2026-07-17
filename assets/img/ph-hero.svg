@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 800" role="img" aria-label="Platzhalter — Titelbild einsetzen" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eee9de"/>
+      <stop offset="1" stop-color="#ddd7c8"/>
+    </linearGradient>
+    <pattern id="facH" width="150" height="176" patternUnits="userSpaceOnUse">
+      <rect x="24" y="26" width="102" height="124" fill="#c3baa6"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="800" fill="url(#sky)"/>
+  <rect x="120" y="150" width="620" height="650" fill="url(#facH)" opacity="0.7"/>
+  <rect x="880" y="300" width="600" height="500" fill="url(#facH)" opacity="0.5"/>
+  <rect x="120" y="150" width="620" height="650" fill="none" stroke="#bcb5a5" stroke-width="2"/>
+  <g fill="#8a8579" font-family="Helvetica, Arial, sans-serif">
+    <text x="120" y="90" font-size="26" letter-spacing="6" font-weight="700">SINKE · BERLIN</text>
+    <text x="120" y="128" font-size="20" letter-spacing="2" fill="#a99432">Titelbild einsetzen — assets/img/</text>
+  </g>
+</svg>

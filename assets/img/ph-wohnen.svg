@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Platzhalter Wohnungsbau — Foto einsetzen" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <pattern id="w" width="150" height="176" patternUnits="userSpaceOnUse">
+      <rect x="26" y="28" width="98" height="120" fill="#b9af9b"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="900" fill="#e8e3d8"/>
+  <rect x="80" y="120" width="1040" height="780" fill="url(#w)" opacity="0.85"/>
+  <g fill="#8a8579" font-family="Helvetica, Arial, sans-serif">
+    <text x="80" y="72" font-size="22" letter-spacing="5" font-weight="700">WOHNUNGSBAU</text>
+    <text x="80" y="104" font-size="17" letter-spacing="1.5" fill="#a2a08f">Bildplatz</text>
+  </g>
+</svg>

@@ -1,0 +1,7 @@
+# robots.txt — Sinke Planung
+# TODO: Domain unten an die echte Domain anpassen.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.sinke-planung.de/sitemap.xml

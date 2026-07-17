@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Sinke Planung Berlin">
+  <rect width="1200" height="630" fill="#16150f"/>
+  <g transform="translate(80,80)">
+    <rect width="60" height="60" fill="#211f17"/>
+    <rect x="12" y="30" width="7" height="18" fill="#ece8dd"/>
+    <rect x="26" y="21" width="7" height="27" fill="#ece8dd"/>
+    <rect x="40" y="12" width="7" height="36" fill="#ece8dd"/>
+    <rect x="10" y="50" width="40" height="4" fill="#a24e34"/>
+  </g>
+  <text x="80" y="360" font-family="Helvetica, Arial, sans-serif" font-size="96" font-weight="700" letter-spacing="-2" fill="#ece8dd">SINKE</text>
+  <text x="84" y="416" font-family="Helvetica, Arial, sans-serif" font-size="30" letter-spacing="14" fill="#969184">PLANUNG · BERLIN</text>
+  <text x="80" y="540" font-family="Georgia, serif" font-size="34" fill="#c9c4b6">Planung · Umbau · Sanierung · Anbau</text>
+  <rect x="80" y="470" width="70" height="4" fill="#a24e34"/>
+</svg>

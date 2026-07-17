@@ -1,0 +1,19 @@
+{
+  "name": "Sinke Planung",
+  "short_name": "SINKE",
+  "description": "Planungsbüro in Berlin – Wohnungsbau, Gewerbe, Bildungsbau und Bestand.",
+  "lang": "de",
+  "start_url": "index.html",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#f2efe8",
+  "theme_color": "#16150f",
+  "icons": [
+    {
+      "src": "assets/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
