@@ -156,11 +156,12 @@ und das versteckte Feld `form-name` entfernen und dort `danke.html` als Weiterle
 ```
 ├── index.html                  Startseite (Büro-Definition, Fakten, Leistungen, Referenzen, FAQ)
 ├── leistungen.html             4 Leistungen, Ablauf, FAQ
+├── leistungsphasen-hoai.html   Ratgeber: Leistungsphasen 1 bis 9 der HOAI mit Anteilen und Kosten
 ├── projekte.html               7 Referenzprojekte mit allen Bildern (Lightbox)
 ├── planung-*.html              Bezirksseiten: Prenzlauer Berg, Charlottenburg, Zehlendorf, Mitte
 ├── buero.html                  Büro, Haltung (Team: TODO)
 ├── journal.html                Übersicht der Ratgeber
-├── journal-*.html              5 Ratgeber-Beiträge
+├── journal-*.html              5 weitere Ratgeber-Beiträge
 ├── kontakt.html  danke.html    Kontakt mit Formular, Bestätigungsseite (noindex)
 ├── partner.html                Netzwerk der Fachplaner
 ├── impressum.html  datenschutz.html   Rechtstexte (Vorlagen, prüfen lassen!)
