@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sinke Planung – Journal</title>
+    <link>https://www.sinke-planung.de/journal.html</link>
+    <atom:link href="https://www.sinke-planung.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Ratgeber zu Umbau, Sanierung, Anbau und Aufstockung in Berlin von Sinke Planung.</description>
+    <language>de-DE</language>
+    <lastBuildDate>Mon, 16 Nov 2026 09:00:00 +0100</lastBuildDate>
+    <item>
+      <title>Altbausanierung in Berlin: Was zuerst zu klären ist</title>
+      <link>https://www.sinke-planung.de/journal-altbausanierung-berlin.html</link>
+      <guid isPermaLink="true">https://www.sinke-planung.de/journal-altbausanierung-berlin.html</guid>
+      <pubDate>Mon, 16 Nov 2026 09:00:00 +0100</pubDate>
+      <category>Sanierung</category>
+      <description>Vor einer Altbausanierung stehen drei Klärungen: was die Bausubstanz hergibt, was rechtlich zulässig ist und in welcher Reihenfolge gebaut wird. Erst danach lohnt es sich, Angebote einzuholen.</description>
+    </item>
+    <item>
+      <title>Anbau und Aufstockung in Berlin: Wann braucht es eine Baugenehmigung?</title>
+      <link>https://www.sinke-planung.de/journal-anbau-aufstockung-baugenehmigung.html</link>
+      <guid isPermaLink="true">https://www.sinke-planung.de/journal-anbau-aufstockung-baugenehmigung.html</guid>
+      <pubDate>Mon, 16 Nov 2026 09:00:00 +0100</pubDate>
+      <category>Baurecht</category>
+      <description>Ein Anbau oder eine Aufstockung vergrößert das Gebäude und braucht in Berlin in aller Regel ein Verfahren bei der Bauaufsicht des Bezirks. Welches Verfahren gilt, hängt vom Vorhaben und vom Grundstück ab.</description>
+    </item>
+    <item>
+      <title>Grundriss optimieren: mehr aus der vorhandenen Fläche holen</title>
+      <link>https://www.sinke-planung.de/journal-grundriss-optimieren.html</link>
+      <guid isPermaLink="true">https://www.sinke-planung.de/journal-grundriss-optimieren.html</guid>
+      <pubDate>Mon, 16 Nov 2026 09:00:00 +0100</pubDate>
+      <category>Grundriss</category>
+      <description>Ein besserer Grundriss entsteht meist ohne Anbau: durch das Versetzen einzelner Wände, kürzere Wege und mehr Tageslicht. Was möglich ist, entscheiden das Tragwerk und die Lage der Leitungen.</description>
+    </item>
+    <item>
+      <title>Energetische Sanierung: Reihenfolge und Förderung</title>
+      <link>https://www.sinke-planung.de/journal-energetische-sanierung-reihenfolge.html</link>
+      <guid isPermaLink="true">https://www.sinke-planung.de/journal-energetische-sanierung-reihenfolge.html</guid>
+      <pubDate>Mon, 16 Nov 2026 09:00:00 +0100</pubDate>
+      <category>Energie</category>
+      <description>Bei der energetischen Sanierung kommt zuerst die Gebäudehülle und dann die Heizung. So wird die neue Anlage für den geringeren Wärmebedarf ausgelegt und nicht zu groß gekauft.</description>
+    </item>
+    <item>
+      <title>Bauen im Bestand: Aufstockung statt Abriss</title>
+      <link>https://www.sinke-planung.de/journal-aufstockung-statt-abriss.html</link>
+      <guid isPermaLink="true">https://www.sinke-planung.de/journal-aufstockung-statt-abriss.html</guid>
+      <pubDate>Mon, 16 Nov 2026 09:00:00 +0100</pubDate>
+      <category>Bauen im Bestand</category>
+      <description>Eine Aufstockung schafft neuen Wohnraum, ohne ein Grundstück zu verbrauchen und ohne das bestehende Haus abzureißen. Ob sie möglich ist, entscheiden die Tragreserven des Gebäudes, der Brandschutz und das Baurecht.</description>
+    </item>
+  </channel>
+</rss>
