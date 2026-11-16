@@ -6,7 +6,7 @@ Statische, SEO-optimierte Website für ein Planungsbüro in Berlin
 - **Keine Abhängigkeiten, kein Build-Schritt.** Reines HTML/CSS/JS → schnell, stabil, überall hostbar (bestes Fundament für SEO & Core Web Vitals).
 - **Mobile-first & barrierearm** (Skip-Link, Fokus-Stile, `prefers-reduced-motion`, semantisches HTML).
 - **Für Suchmaschinen und KI-Suche aufbereitet** (strukturierte Daten, FAQ, Ratgeber, `llms.txt`), siehe Abschnitt 8.
-- **Design bewusst redaktionell-architektonisch** (Raster, Haarlinien, viel Weißraum, ein zurückhaltender Ton-Akzent) — nicht im typischen „KI-Look".
+- **Design nach dem taste-Skill:** ein Raster, eine Schrift (Schibsted Grotesk), die Farben des Büros, Fotos in Originalgröße.
 
 ---
 
@@ -55,13 +55,12 @@ Diese Platzhalter sind absichtlich klar markiert (Suche im Ordner):
 | Suchen nach | Ersetzen durch | Wo |
 |---|---|---|
 | `https://bonvico.com` | endgültige Domain (bonvico.com ist die vorläufige Adresse) | alle HTML, `sitemap.xml`, `robots.txt`, `llms.txt`, `feed.xml` |
-| `Beispielstraße 1` / `10115` | echte Anschrift | Footer aller Seiten, `kontakt.html`, JSON-LD, `impressum.html` |
-| `+49 30 000 000` / `+49300000000` | echte Telefonnummer | Footer, `kontakt.html`, Panel, JSON-LD |
-| `buero@sinke-planung.de` | echte E-Mail | überall |
+| Anschrift | echte Anschrift ergänzen (aktuell wird keine gezeigt) | `kontakt.html` (TODO-Kommentar), JSON-LD in `index.html` und `kontakt.html`, `impressum.html` |
+| Telefon, E-Mail | echte Angaben ergänzen (aktuell nur das Formular) | `kontakt.html`, JSON-LD (`telephone`, `email`), `impressum.html` |
 | `[ ... ]` (eckige Klammern) | echte Angaben | `impressum.html`, `datenschutz.html`, `buero.html` (Team) |
 | `<!-- TODO ... -->` | Team, Anfahrt, Adresse | `buero.html` (Team), `kontakt.html` (Route planen), Footer |
-| `52.5200` / `13.4050` | echte Geo-Koordinaten | JSON-LD in `index.html` und `kontakt.html` |
-| LinkedIn/Instagram-URLs | echte Profile oder entfernen | Footer, JSON-LD |
+| Geo-Koordinaten | mit der echten Anschrift ergänzen | JSON-LD (`geo`) in `index.html` und `kontakt.html` |
+| LinkedIn/Instagram | echte Profile ergänzen (aktuell keine verlinkt) | Footer (`.socials`), JSON-LD (`sameAs`) |
 
 **Wichtig für lokale SEO:** Name, Adresse, Telefon (**NAP**) müssen überall **identisch** sein — auch später in Verzeichnissen und im Google-Unternehmensprofil.
 
@@ -168,7 +167,16 @@ und das versteckte Feld `form-name` entfernen und dort `danke.html` als Weiterle
 ├── 404.html
 ├── sitemap.xml  robots.txt  llms.txt  feed.xml  site.webmanifest  favicon.ico  netlify.toml
 └── assets/
-    ├── css/style.css           komplettes Design-System (Design-Tokens oben)
-    ├── js/main.js              Mobile-Nav, Projektfilter, Lightbox
+    ├── system.css  system.js   Baukasten des taste-Skills (Raster, Schrift, Buttons, Navigation, Formular)
+    ├── layout/ motion/ ui/ moments/   weitere Teile des Baukastens (Hero, Hover, Karten, Textmoment)
+    ├── site.css                eigene Regeln: Schrift, Farben des Büros, Unterseiten, Artikel
+    ├── fonts/                  Schibsted Grotesk, lokal ausgeliefert (kein Abruf bei Google)
     └── img/projekte/           Projektfotos (WebP); dazu Favicon, Icons, og-cover.jpg
 ```
+
+**Design:** Die Seiten sind mit dem Baukasten des [taste-Skills](https://github.com/Leonxlnx/taste-skill)
+(tasteskill 2.5.1, MIT-Lizenz) gebaut. Die Startseite folgt seinem Raster streng (ein Abschnitt pro
+Bildschirm); auf den Unterseiten fließen die Abschnitte frei, weil lange Texte nicht in dieses Raster passen.
+Die Dateien des Baukastens (`system.css`, `system.js`, `layout/`, `motion/`, `ui/`, `moments/`) nicht von Hand
+ändern; eigene Anpassungen gehören in `assets/site.css`. Farben und Schrift stehen dort im `:root`-Block.
+Fotos werden höchstens in ihrer Originalgröße gezeigt, damit sie scharf bleiben.
