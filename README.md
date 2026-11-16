@@ -54,7 +54,7 @@ Diese Platzhalter sind absichtlich klar markiert (Suche im Ordner):
 
 | Suchen nach | Ersetzen durch | Wo |
 |---|---|---|
-| `https://www.sinke-planung.de` | echte Domain | alle HTML, `sitemap.xml`, `robots.txt`, `llms.txt`, `feed.xml` |
+| `https://bonvico.com` | endgültige Domain (bonvico.com ist die vorläufige Adresse) | alle HTML, `sitemap.xml`, `robots.txt`, `llms.txt`, `feed.xml` |
 | `Beispielstraße 1` / `10115` | echte Anschrift | Footer aller Seiten, `kontakt.html`, JSON-LD, `impressum.html` |
 | `+49 30 000 000` / `+49300000000` | echte Telefonnummer | Footer, `kontakt.html`, Panel, JSON-LD |
 | `buero@sinke-planung.de` | echte E-Mail | überall |
