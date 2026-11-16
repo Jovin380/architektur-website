@@ -24,6 +24,7 @@
   if (toggle && panel) {
     var setOpen = function (open) {
       toggle.setAttribute("aria-expanded", String(open));
+      toggle.setAttribute("aria-label", open ? "Menü schließen" : "Menü öffnen");
       panel.classList.toggle("is-open", open);
       document.body.classList.toggle("nav-open", open);
     };
@@ -36,23 +37,6 @@
     document.addEventListener("keydown", function (e) {
       if (e.key === "Escape") setOpen(false);
     });
-  }
-
-  /* ---- Scroll-Reveal ---- */
-  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var reveal = document.querySelectorAll(".reveal");
-  if (reveal.length && "IntersectionObserver" in window && !reduce) {
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("in-view");
-          io.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
-    reveal.forEach(function (el) { io.observe(el); });
-  } else {
-    reveal.forEach(function (el) { el.classList.add("in-view"); });
   }
 
   /* ---- Projektfilter ---- */
@@ -76,16 +60,26 @@
   if (zoomables.length) {
     var box = document.createElement("div");
     box.className = "lightbox";
-    box.innerHTML = '<button class="lightbox__close" aria-label="Schließen">&times;</button><img alt="">';
+    box.setAttribute("role", "dialog");
+    box.setAttribute("aria-modal", "true");
+    box.setAttribute("aria-label", "Bild in voller Größe");
+    box.innerHTML = '<button class="lightbox__close" type="button" aria-label="Schließen">&times;</button><img alt="">';
     document.body.appendChild(box);
     var boxImg = box.querySelector("img");
     var close = function () { box.classList.remove("is-open"); document.body.classList.remove("nav-open"); };
     zoomables.forEach(function (img) {
-      img.addEventListener("click", function () {
+      var show = function () {
         boxImg.src = img.getAttribute("src");
         boxImg.alt = img.getAttribute("alt") || "";
         box.classList.add("is-open");
         document.body.classList.add("nav-open");
+        box.querySelector(".lightbox__close").focus();
+      };
+      img.setAttribute("tabindex", "0");
+      img.setAttribute("role", "button");
+      img.addEventListener("click", show);
+      img.addEventListener("keydown", function (e) {
+        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); show(); }
       });
     });
     box.addEventListener("click", function (e) { if (e.target !== boxImg) close(); });

@@ -5,6 +5,7 @@ Statische, SEO-optimierte Website für ein Planungsbüro in Berlin
 
 - **Keine Abhängigkeiten, kein Build-Schritt.** Reines HTML/CSS/JS → schnell, stabil, überall hostbar (bestes Fundament für SEO & Core Web Vitals).
 - **Mobile-first & barrierearm** (Skip-Link, Fokus-Stile, `prefers-reduced-motion`, semantisches HTML).
+- **Für Suchmaschinen und KI-Suche aufbereitet** (strukturierte Daten, FAQ, Ratgeber, `llms.txt`), siehe Abschnitt 8.
 - **Design bewusst redaktionell-architektonisch** (Raster, Haarlinien, viel Weißraum, ein zurückhaltender Ton-Akzent) — nicht im typischen „KI-Look".
 
 ---
@@ -53,12 +54,13 @@ Diese Platzhalter sind absichtlich klar markiert (Suche im Ordner):
 
 | Suchen nach | Ersetzen durch | Wo |
 |---|---|---|
-| `https://www.sinke-planung.de` | echte Domain | alle HTML, `sitemap.xml`, `robots.txt` |
+| `https://www.sinke-planung.de` | echte Domain | alle HTML, `sitemap.xml`, `robots.txt`, `llms.txt`, `feed.xml` |
 | `Beispielstraße 1` / `10115` | echte Anschrift | Footer aller Seiten, `kontakt.html`, JSON-LD, `impressum.html` |
 | `+49 30 000 000` / `+49300000000` | echte Telefonnummer | Footer, `kontakt.html`, Panel, JSON-LD |
 | `buero@sinke-planung.de` | echte E-Mail | überall |
 | `[ ... ]` (eckige Klammern) | echte Angaben | `impressum.html`, `datenschutz.html`, `buero.html` (Team) |
-| `<!-- TODO ... -->` | echte Zahlen/Karte | Kennzahlen auf `index.html`, Karte auf `kontakt.html` |
+| `<!-- TODO ... -->` | Team, Anfahrt, Adresse | `buero.html` (Team), `kontakt.html` (Route planen), Footer |
+| `52.5200` / `13.4050` | echte Geo-Koordinaten | JSON-LD in `index.html` und `kontakt.html` |
 | LinkedIn/Instagram-URLs | echte Profile oder entfernen | Footer, JSON-LD |
 
 **Wichtig für lokale SEO:** Name, Adresse, Telefon (**NAP**) müssen überall **identisch** sein — auch später in Verzeichnissen und im Google-Unternehmensprofil.
@@ -69,83 +71,104 @@ Diese Platzhalter sind absichtlich klar markiert (Suche im Ordner):
 
 ## 5. Fotos einsetzen
 
-Aktuell stehen überall Platzhalter (`assets/img/ph-*.svg`) im Fassaden-Raster-Look.
+Alle Projektfotos liegen web-optimiert als **WebP** in `assets/img/projekte/` (sprechende Dateinamen, z. B.
+`mehringdamm-kueche.webp`). Die ursprünglichen PNG-Uploads in `assets/img/Projekt_*/` werden von keiner Seite
+mehr geladen (11,4 MB → 1 MB) und können gelöscht werden, sobald höher aufgelöste Originale vorliegen.
 
-So ersetzt du sie:
-1. Fotos nach `assets/img/` legen (sprechende Namen, z. B. `treptow-hof.jpg`).
-2. Im `<img>`-Tag `src` auf die neue Datei setzen und `alt` konkret formulieren
-   (der `alt`-Text ist SEO-relevant — Motiv + Ort + Büro, z. B. „Innenhof Wohnquartier Berlin-Treptow, Sinke Planung").
-3. `width`/`height` auf das echte Seitenverhältnis anpassen (verhindert Layout-Sprünge = besserer Core-Web-Vitals-Wert).
+Neues Foto einsetzen:
+1. Als WebP exportieren (oder JPG), **mindestens 1600 px breit**, für das Hero-Bild 2400 px. Dateiname klein,
+   ohne Umlaute und Leerzeichen, mit Motiv und Projekt: `projektname-motiv.webp`.
+2. Im `<img>`-Tag `src`, `width` und `height` (echte Pixelmaße) setzen.
+3. `alt` beschreibt, was wirklich zu sehen ist, plus Projekt/Ort, z. B.
+   „Sanierter Altbau-Wohnraum am Mehringdamm mit Stuck und Fischgrätparkett". Keine Keyword-Listen.
 
-**Format-Tipp:** Web-optimiert exportieren (JPG/WebP, ~1600 px breit, komprimiert). Große Fotos bremsen Ladezeit und damit das Ranking.
+**Wichtig:** Die aktuellen Fotos sind nur 300–760 px breit und wirken groß gezeigt unscharf (vor allem das
+Hero-Bild der Startseite). Bitte Originaldateien der Fotograf:innen besorgen und die Bildrechte klären;
+der Bildnachweis gehört ins Impressum.
 
-**Für Social-Vorschauen (WhatsApp/LinkedIn):** `assets/img/og-cover.svg` durch ein **1200×630 px JPG/PNG** ersetzen und die `og:image`-/`twitter:image`-URLs auf die neue Datei zeigen lassen (viele Netzwerke rendern kein SVG).
+**Social-Vorschau (WhatsApp/LinkedIn):** `assets/img/og-cover.jpg` (1200×630). Bei neuem Hero-Bild neu erzeugen.
 
 ---
 
-## 6. Neues Projekt hinzufügen
+## 6. Inhalte ergänzen
 
-1. Eine bestehende Projektseite kopieren, z. B.
-   `cp projekt-wohnquartier-treptow.html projekt-DEINPROJEKT.html`
-2. Inhalt anpassen: `<title>`, Description, **canonical + og:url**, JSON-LD (Breadcrumb + `CreativeWork`), H1, Lead, Fakten, Fließtext, Galerie, Prev/Next.
-3. In `projekte.html` eine Karte ergänzen (Block `<a class="project" ... data-cat="wohnen|bildung|gewerbe|bestand">`) und den Link auf die neue Datei setzen.
-4. In `sitemap.xml` eine `<url>` ergänzen und in `projekte.html` die `ItemList` im JSON-LD erweitern.
+**Neues Projekt:** in `projekte.html` einen `<article class="proj" id="kurzname">`-Block kopieren und Titel,
+Kategorie und Bilder anpassen. Zusätzlich im JSON-LD derselben Seite (`ItemList`) einen Eintrag ergänzen.
+Karten auf der Startseite und den Bezirksseiten verlinken auf `projekte.html#kurzname`.
 
-Die Filter auf `projekte.html` funktionieren über `data-cat` automatisch.
+**Neuer Journal-Beitrag:** eine Datei `journal-*.html` kopieren, dann anpassen:
+`<title>`, Description, canonical, `og:url`, JSON-LD (`BlogPosting`: `headline`, `datePublished`,
+`dateModified`; `FAQPage`), Text. Danach den Beitrag eintragen in: `journal.html` (Liste + JSON-LD `Blog`),
+`sitemap.xml`, `feed.xml` und `llms.txt`.
+
+Aufbau, der sich für Suchmaschinen und KI-Suche bewährt: Die Antwort steht im ersten Absatz, darunter ein
+Kasten „Kurz gesagt", Zwischenüberschriften als Sachfragen, am Ende „Häufige Fragen" und die Quellen.
+Rechtsangaben mit Stand-Datum versehen und bei Gesetzesänderungen aktualisieren (`dateModified` + `lastmod`).
+
+**FAQ ändern:** Frage und Antwort stehen zweimal auf der Seite, sichtbar (`<details>`) und im JSON-LD
+(`FAQPage`). Beide Stellen müssen wortgleich bleiben.
+
+**Header, Navigation, Footer:** sind auf jeder Seite als HTML eingebettet. Änderungen auf allen Seiten nachziehen.
 
 ---
 
 ## 7. Kontaktformular aktivieren
 
-Das Formular in `kontakt.html` ist **für Netlify Forms vorbereitet** — beim Hosting auf Netlify funktioniert es sofort (Einträge erscheinen im Netlify-Dashboard).
+Das Formular in `kontakt.html` ist **für Netlify Forms vorbereitet** und leitet nach dem Absenden auf
+`danke.html` weiter.
 
 Ohne Netlify: bei [Formspree](https://formspree.io) o. ä. einen Endpunkt anlegen und im `<form>`
 `action="https://formspree.io/f/DEIN-CODE"` setzen; die Attribute `data-netlify`, `netlify-honeypot`
-und das versteckte Feld `form-name` können dann entfernt werden.
+und das versteckte Feld `form-name` entfernen und dort `danke.html` als Weiterleitung eintragen.
 
 ---
 
-## 8. SEO-Start nach dem Launch (Checkliste)
+## 8. Suchmaschinen und KI-Suche
 
-Die Technik ist gesetzt (Meta-Tags, Open Graph, `sitemap.xml`, `robots.txt`, strukturierte Daten/Schema.org,
-FAQ-Rich-Snippets, saubere Überschriften, `alt`-Texte, schnelle Ladezeit). Nach dem Launch bringt vor allem das:
+**Bereits eingebaut**
+- Pro Seite: eindeutiger `<title>` (≤ 65 Zeichen), Description (≤ 160), canonical, Open Graph, Twitter Card.
+- Strukturierte Daten (JSON-LD) als verknüpfter Graph: `ProfessionalService` (Startseite, Kontakt), `WebSite`,
+  `WebPage`, `BreadcrumbList`, `Service` (Leistungen, Bezirke), `FAQPage`, `ItemList` (Projekte), `Blog`/`BlogPosting`.
+- `robots.txt` gibt Suchmaschinen und KI-Crawler ausdrücklich frei (GPTBot, OAI-SearchBot, ClaudeBot,
+  PerplexityBot, Google-Extended u. a.). Wer das nicht möchte, entfernt die jeweilige Zeile.
+- `llms.txt`: Kurzprofil des Büros mit allen wichtigen Seiten für KI-Assistenten.
+- `sitemap.xml`, `feed.xml` (RSS des Journals).
+- Inhalte, die sich zitieren lassen: klare Definition des Büros, Fakten in ganzen Sätzen, FAQ mit
+  eigenständigen Antworten, Ratgeber mit Quellen und Stand-Datum.
+- Technik: Bilder als WebP mit festen Maßen, Hero-Bild vorgeladen, kein Layout-Sprung, kein Webfont,
+  Inhalte ohne JavaScript sichtbar. `netlify.toml` setzt Cache- und Sicherheits-Header.
 
-1. **Google Search Console** einrichten, Domain verifizieren, `sitemap.xml` einreichen.
-2. **Google Unternehmensprofil (Business Profile)** anlegen — der stärkste Hebel für ein lokales Planungsbüro:
-   exakt dieselbe NAP, Kategorie „Planungsbüro/Architekt", Fotos, Öffnungszeiten, Leistungsgebiet Berlin.
-3. **Bing Webmaster Tools** (analog zur Search Console).
-4. **Einheitliche Einträge** in Verzeichnissen: Architektenkammer Berlin, BDA, 11880, Das Örtliche, ProvenExpert — immer dieselbe NAP.
-5. **Bewertungen** von Bauherren einholen (Google-Rezensionen wirken lokal stark).
-6. **Backlinks**: Projektpartner, Bauherren, Fachpresse, Wettbewerbsdatenbanken (z. B. competitionline, BauNetz) verlinken lassen.
-7. **Content pflegen**: `journal.html` regelmäßig mit Fachbeiträgen füllen (Berliner Bau-Themen) — hält die Seite „frisch" und rankt auf Long-Tail-Suchen.
-
-**Ziel-Keywords** (bereits im Text verankert): *Planungsbüro Berlin, Architekt Berlin, Wohnungsbau Berlin,
-Geschosswohnungsbau, Schulbau Berlin, Gewerbebau Berlin, Sanierung Berlin* + Bezirks-Longtails.
+**Nach dem Launch (das bringt am meisten)**
+1. **Platzhalter aus Abschnitt 4 ersetzen** (Domain, Adresse, Telefon, E-Mail, Social-Links, Geo-Koordinaten im JSON-LD).
+2. **Google Search Console** und **Bing Webmaster Tools** einrichten, `sitemap.xml` einreichen.
+   Bing ist die Quelle für ChatGPT-Suche und Copilot, also nicht auslassen.
+3. **Google Unternehmensprofil** anlegen: exakt dieselbe Schreibweise von Name, Adresse, Telefon (NAP).
+4. **Einheitliche Einträge** in Verzeichnissen und Portalen, immer dieselbe NAP. KI-Suche stützt sich stark
+   auf Erwähnungen auf fremden Seiten.
+5. **Team mit Namen und Qualifikation** auf `buero.html` ergänzen (TODO-Kommentar dort) und im Journal
+   Autor:innen nennen.
+6. **Bewertungen** von Bauherr:innen einholen; **Backlinks** von Partnern, Bauherren und Fachpresse.
+7. **Journal pflegen**: neue Beiträge und aktualisierte Rechtsstände halten die Seite frisch.
 
 ---
 
 ## 9. Struktur
 
 ```
-website/
-├── index.html                       Startseite (H1, Kennzahlen, Leistungen, Projekte, FAQ)
-├── leistungen.html                  4 Schwerpunkte + HOAI-Leistungsphasen 1–9
-├── projekte.html                    Referenz-Raster mit Filter
-├── projekt-wohnquartier-treptow.html   Projekt-Detail (Vorlage für weitere)
-├── projekt-schule-lichtenberg.html
-├── projekt-gewerbehof-mitte.html
-├── projekt-sanierung-schoeneberg.html
-├── buero.html                       Büro/Haltung/Team (E-E-A-T)
-├── journal.html                     Aktuelles/Blog (laufende SEO-Inhalte)
-├── kontakt.html                     NAP, Öffnungszeiten, Formular, LocalBusiness-Schema
-├── impressum.html   datenschutz.html   Rechtstexte (Vorlagen — prüfen lassen!)
+├── index.html                  Startseite (Büro-Definition, Fakten, Leistungen, Referenzen, FAQ)
+├── leistungen.html             4 Leistungen, Ablauf, FAQ
+├── projekte.html               7 Referenzprojekte mit allen Bildern (Lightbox)
+├── planung-*.html              Bezirksseiten: Prenzlauer Berg, Charlottenburg, Zehlendorf, Mitte
+├── buero.html                  Büro, Haltung (Team: TODO)
+├── journal.html                Übersicht der Ratgeber
+├── journal-*.html              5 Ratgeber-Beiträge
+├── kontakt.html  danke.html    Kontakt mit Formular, Bestätigungsseite (noindex)
+├── partner.html                Netzwerk der Fachplaner
+├── impressum.html  datenschutz.html   Rechtstexte (Vorlagen, prüfen lassen!)
 ├── 404.html
-├── sitemap.xml   robots.txt   site.webmanifest
+├── sitemap.xml  robots.txt  llms.txt  feed.xml  site.webmanifest  favicon.ico  netlify.toml
 └── assets/
-    ├── css/style.css                komplettes Design-System (Design-Tokens oben)
-    ├── js/main.js                   Mobile-Nav, Scroll-Reveal, Projektfilter, Lightbox
-    └── img/                         Platzhalter-SVGs, Favicon, OG-Bild
+    ├── css/style.css           komplettes Design-System (Design-Tokens oben)
+    ├── js/main.js              Mobile-Nav, Projektfilter, Lightbox
+    └── img/projekte/           Projektfotos (WebP); dazu Favicon, Icons, og-cover.jpg
 ```
-
-Header und Footer sind auf jeder Seite als HTML eingebettet (bewusst kein Include/Framework —
-das ist für Crawler und Ladezeit am besten). Änderst du die Navigation, passe sie auf allen Seiten an.

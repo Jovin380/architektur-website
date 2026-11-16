@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- TODO: Domain (https://www.sinke-planung.de) an die echte Domain anpassen. -->
+<!-- TODO: Domain an die echte Domain anpassen. lastmod bei inhaltlichen Änderungen aktualisieren. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.sinke-planung.de/</loc><lastmod>2026-07-16</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://www.sinke-planung.de/leistungen.html</loc><lastmod>2026-07-16</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.sinke-planung.de/projekte.html</loc><lastmod>2026-07-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.sinke-planung.de/planung-prenzlauer-berg.html</loc><lastmod>2026-07-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.sinke-planung.de/planung-charlottenburg.html</loc><lastmod>2026-07-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.sinke-planung.de/planung-zehlendorf.html</loc><lastmod>2026-07-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.sinke-planung.de/planung-mitte.html</loc><lastmod>2026-07-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.sinke-planung.de/partner.html</loc><lastmod>2026-07-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.sinke-planung.de/buero.html</loc><lastmod>2026-07-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.sinke-planung.de/journal.html</loc><lastmod>2026-07-16</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.sinke-planung.de/kontakt.html</loc><lastmod>2026-07-16</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.sinke-planung.de/impressum.html</loc><lastmod>2026-07-16</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://www.sinke-planung.de/datenschutz.html</loc><lastmod>2026-07-16</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://www.sinke-planung.de/</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://www.sinke-planung.de/leistungen.html</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://www.sinke-planung.de/projekte.html</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://www.sinke-planung.de/buero.html</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://www.sinke-planung.de/journal.html</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://www.sinke-planung.de/journal-altbausanierung-berlin.html</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://www.sinke-planung.de/journal-anbau-aufstockung-baugenehmigung.html</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://www.sinke-planung.de/journal-grundriss-optimieren.html</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://www.sinke-planung.de/journal-energetische-sanierung-reihenfolge.html</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://www.sinke-planung.de/journal-aufstockung-statt-abriss.html</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://www.sinke-planung.de/kontakt.html</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://www.sinke-planung.de/partner.html</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://www.sinke-planung.de/planung-prenzlauer-berg.html</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://www.sinke-planung.de/planung-charlottenburg.html</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://www.sinke-planung.de/planung-zehlendorf.html</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://www.sinke-planung.de/planung-mitte.html</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://www.sinke-planung.de/impressum.html</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://www.sinke-planung.de/datenschutz.html</loc><lastmod>2026-11-16</lastmod></url>
 </urlset>
