@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" role="img" aria-label="Platzhalter wettbewerb-2-2">
+  <defs><pattern id="p" width="28" height="28" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="28" height="28" fill="#e8e3d8"/><rect width="2" height="28" fill="#dcd6c8"/></pattern></defs>
+  <rect width="1600" height="1200" fill="url(#p)"/>
+  <rect x="470.0" y="510.0" width="660" height="180" rx="12" fill="#f2efe8" stroke="#a24e34" stroke-width="3"/>
+  <text x="800.0" y="588.0" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="44" fill="#1b1a17">Bild folgt: wettbewerb-2-2</text>
+  <text x="800.0" y="646.0" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="30" fill="#64625e">Lageplan oder Grundriss</text>
+</svg>

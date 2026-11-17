@@ -120,3 +120,12 @@ main.flow .section-head h2, main.flow .stack-4 > h2 { text-wrap: balance; }
 /* Anfrage: das Foto so hoch wie das Formular daneben */
 .anfrage__foto { align-self: stretch; min-height: 420px; }
 @media (max-width: 639px) { .anfrage__foto { min-height: 0; aspect-ratio: 4 / 3; } }
+
+/* Wettbewerbe: großes Hauptbild, Fakten daneben, zwei Pläne darunter */
+.wb .wb-bild { height: auto; }
+.wb .wb-bild > img { width: 100%; height: 100%; object-fit: cover; }
+@media (min-width: 640px) { .wb .grid > .span-7 { grid-column: span 7; } .wb .grid > .span-5 { grid-column: span 5; } .wb .grid > .span-6 { grid-column: span 6; } }
+.wb-fakten > li { grid-template-columns: 8.5em minmax(0, 1fr); }
+.wb-fakten .rows__value { grid-column: 2; text-align: left; white-space: normal; overflow-wrap: anywhere; hyphens: auto; }
+/* Platzhalter nur in der Vorschau: deutlich markiert */
+img[data-platzhalter] { outline: 2px dashed var(--p-accent); outline-offset: -2px; }

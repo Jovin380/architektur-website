@@ -111,6 +111,25 @@ Rechtsangaben mit Stand-Datum versehen und bei Gesetzesänderungen aktualisieren
 
 ---
 
+### Wettbewerbe einfügen
+
+`wettbewerbe.html` ist mit Platzhaltern vorbereitet (drei Wettbewerbe, je drei Bilder). Die Platzhalter sind in der
+Vorschau rot gestrichelt markiert; die Seite steht bis zum Befüllen auf `noindex` und fehlt in `sitemap.xml`.
+
+Pro Wettbewerb werden gebraucht: Titel, Ort, Jahr, Auslober, Verfahren, Ergebnis, eigene Arbeit oder frühere
+Tätigkeit, zwei bis vier Sätze zur Aufgabe und zum Entwurf und drei Bilder:
+
+| Datei | Inhalt | Format |
+|---|---|---|
+| `assets/img/wettbewerbe/wettbewerb-1-1.webp` | Visualisierung oder Hauptbild | quer 16:10, mind. 2000 px breit |
+| `assets/img/wettbewerbe/wettbewerb-1-2.webp` | Lageplan oder Grundriss | 4:3 |
+| `assets/img/wettbewerbe/wettbewerb-1-3.webp` | Schnitt, Ansicht oder Modellfoto | 4:3 |
+
+Für Wettbewerb 2 und 3 entsprechend `wettbewerb-2-…`, `wettbewerb-3-…`. Nach dem Einfügen `robots` auf
+`index, follow` stellen und die Seite in `sitemap.xml` und `llms.txt` aufnehmen.
+
+---
+
 ## 7. Kontaktformular aktivieren
 
 Das Formular in `kontakt.html` ist **für Netlify Forms vorbereitet** und leitet nach dem Absenden auf
