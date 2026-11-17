@@ -24,13 +24,39 @@
   [headers.values]
     Cache-Control = "public, max-age=2592000"
 
+# Schrift: ändert sich nie
+[[headers]]
+  for = "/assets/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
 # CSS und JS: 1 Tag, danach im Hintergrund erneuern
 [[headers]]
-  for = "/assets/css/*"
+  for = "/assets/system.css"
   [headers.values]
     Cache-Control = "public, max-age=86400, stale-while-revalidate=604800"
 [[headers]]
-  for = "/assets/js/*"
+  for = "/assets/system.js"
+  [headers.values]
+    Cache-Control = "public, max-age=86400, stale-while-revalidate=604800"
+[[headers]]
+  for = "/assets/site.css"
+  [headers.values]
+    Cache-Control = "public, max-age=86400, stale-while-revalidate=604800"
+[[headers]]
+  for = "/assets/layout/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400, stale-while-revalidate=604800"
+[[headers]]
+  for = "/assets/motion/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400, stale-while-revalidate=604800"
+[[headers]]
+  for = "/assets/ui/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400, stale-while-revalidate=604800"
+[[headers]]
+  for = "/assets/moments/*"
   [headers.values]
     Cache-Control = "public, max-age=86400, stale-while-revalidate=604800"
 

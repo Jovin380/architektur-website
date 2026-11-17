@@ -7,11 +7,11 @@
 <meta name="description" content="Sinke Planung ist ein Planungsbüro in Berlin für Umbau, Sanierung, Anbau, Aufstockung und Neubau. Über 20 Jahre Erfahrung, ein fester Ansprechpartner.">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="author" content="Sinke Planung">
-<meta name="theme-color" content="#16150f">
+<meta name="theme-color" content="#232323">
 <meta name="geo.region" content="DE-BE">
 <meta name="geo.placename" content="Berlin">
 
-<!-- Kanonische URL. Vorläufige Domain: bei einem Domainwechsel https://bonvico.com überall im Projekt ersetzen -->
+<!-- Kanonische URL. TODO: Domain https://bonvico.com überall im Projekt durch die echte Domain ersetzen -->
 <link rel="canonical" href="https://bonvico.com/">
 
 <meta property="og:type" content="website">
@@ -34,7 +34,8 @@
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
 <link rel="alternate" type="application/rss+xml" title="Sinke Planung – Journal" href="feed.xml">
-<link rel="preload" as="image" type="image/webp" href="assets/img/projekte/marienfelde-fassade-detail-hero.webp" imagesrcset="assets/img/projekte/marienfelde-fassade-detail-hero-932.webp 932w, assets/img/projekte/marienfelde-fassade-detail-hero.webp 1398w" imagesizes="100vw" fetchpriority="high">
+<link rel="preload" as="image" type="image/webp" href="assets/img/projekte/marienfelde-fassade-detail-hero.webp" fetchpriority="high">
+<link rel="preload" href="assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/css/style.css">
 
 <!-- Strukturierte Daten (Schema.org) -->
@@ -58,22 +59,12 @@
         "height": 512
       },
       "image": "https://bonvico.com/assets/img/og-cover.jpg",
-      "description": "Sinke Planung ist ein Planungsbüro in Berlin für Umbau, Sanierung, Anbau, Aufstockung, Innenausbau und Neubau. Über 20 Jahre Erfahrung in Architektur und Planung, ein fester Ansprechpartner vom Entwurf bis zur Umsetzung.",
-      "telephone": "+49-30-0000000",
-      "email": "buero@sinke-planung.de",
-      "priceRange": "€€",
+      "description": "Sinke Planung ist ein Planungsbüro für Architektur und Bauplanung in Berlin: Umbau, Sanierung, Anbau, Aufstockung, Innenausbau und Neubau in den Leistungsphasen 1 bis 5. Über 20 Jahre Erfahrung, Referenzen in Berlin, Deutschland und Europa.",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Beispielstraße 1",
-        "postalCode": "10115",
         "addressLocality": "Berlin",
         "addressRegion": "BE",
         "addressCountry": "DE"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 52.52,
-        "longitude": 13.405
       },
       "areaServed": [
         {
@@ -147,16 +138,6 @@
           "closes": "18:00"
         }
       ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "customer service",
-        "telephone": "+49-30-0000000",
-        "email": "buero@sinke-planung.de",
-        "availableLanguage": [
-          "de"
-        ],
-        "areaServed": "DE"
-      },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Planungsleistungen",
@@ -198,11 +179,7 @@
             }
           }
         ]
-      },
-      "sameAs": [
-        "https://www.linkedin.com/company/sinke-planung",
-        "https://www.instagram.com/sinke.planung"
-      ]
+      }
     },
     {
       "@type": "WebSite",
@@ -279,15 +256,15 @@
           "name": "Was kostet die Planung?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Das Honorar richtet sich nach Art, Größe und Schwierigkeit des Vorhabens und danach, welche Leistungsphasen Sie beauftragen. Als Orientierung dient die Honorarordnung für Architekten und Ingenieure (HOAI). Ein Angebot für Ihr Vorhaben erstellen wir auf Anfrage."
+            "text": "Das Honorar richtet sich nach Größe und Schwierigkeit des Vorhabens und nach den beauftragten Leistungsphasen. Orientierung gibt die Honorarordnung HOAI: Bis zum Bauantrag, also in den Leistungsphasen 1 bis 4, fallen 27 Prozent des Gesamthonorars an. Ein Angebot erstellen wir auf Anfrage."
           }
         },
         {
           "@type": "Question",
-          "name": "In welchen Berliner Bezirken planen Sie?",
+          "name": "Wo plant Sinke Planung?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Wir planen in ganz Berlin, unter anderem in Prenzlauer Berg, Charlottenburg, Zehlendorf und Mitte."
+            "text": "Unser Schwerpunkt ist Berlin, unter anderem Prenzlauer Berg, Charlottenburg, Zehlendorf und Mitte. Projekte außerhalb Berlins planen wir ebenfalls: Unsere Referenzen liegen in Berlin, Potsdam und in Verbier in der Schweiz."
           }
         },
         {
@@ -312,72 +289,87 @@
 }
 </script>
 </head>
-<body class="has-overlay-header">
+<body class="home">
 <a class="skip-link" href="#main">Zum Inhalt springen</a>
 
-<header class="site-header">
-  <div class="wrap nav">
-    <a class="brand" href="./" aria-label="Sinke Planung – Startseite">
-      <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
-        <rect width="32" height="32" fill="#1b1a17"/>
-        <rect x="7" y="17" width="4" height="9" fill="#f2efe8"/>
-        <rect x="14" y="12" width="4" height="14" fill="#f2efe8"/>
-        <rect x="21" y="7" width="4" height="19" fill="#f2efe8"/>
-        <rect x="6" y="26" width="20" height="2" fill="#a24e34"/>
-      </svg>
-      <span><b>SINKE</b><small>Planung · Berlin</small></span>
-    </a>
-    <div class="nav__menu">
-      <nav class="nav__links" aria-label="Hauptnavigation">
-        <a href="leistungen.html">Leistungen</a>
-        <a href="projekte.html">Projekte</a>
-        <a href="buero.html">Büro</a>
-        <a href="journal.html">Journal</a>
-        <a href="kontakt.html">Kontakt</a>
-        <a href="partner.html">Partner</a>
-      </nav>
-      <a class="btn btn--ghost nav__cta" href="kontakt.html">Projekt anfragen</a>
-    </div>
-    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="mnav" aria-label="Menü öffnen">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
+<header class="sidebar">
+  <a class="logo" href="./" aria-label="Sinke Planung, Startseite"><svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" fill="#1f1f1f"/><rect x="7" y="17" width="4" height="9" fill="#ffffff"/><rect x="14" y="12" width="4" height="14" fill="#ffffff"/><rect x="21" y="7" width="4" height="19" fill="#ffffff"/><rect x="6" y="26" width="20" height="2" fill="#ffffff"/></svg><span class="logo__name">Sinke Planung</span></a>
+  <p class="sidebar__label" aria-hidden="true"><span>/</span>Startseite</p>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menü öffnen"><span></span><span></span><span></span></button>
 </header>
+<a class="corner-cta" href="kontakt.html">Projekt anfragen</a>
 
-<nav class="nav__panel" id="mnav" aria-label="Navigation (mobil)">
-  <a href="leistungen.html"><span class="n">01</span> Leistungen</a>
-  <a href="projekte.html"><span class="n">02</span> Projekte</a>
-  <a href="buero.html"><span class="n">03</span> Büro</a>
-  <a href="journal.html"><span class="n">04</span> Journal</a>
-  <a href="kontakt.html"><span class="n">05</span> Kontakt</a>
-  <a href="partner.html"><span class="n">06</span> Partner</a>
-  <div class="panel-foot">
-    <a href="tel:+49300000000">+49 30 000 000</a>
-    <a href="mailto:buero@sinke-planung.de">buero@sinke-planung.de</a>
-    <span>Berlin · Mo–Fr 9–18 Uhr</span>
+<nav class="menu" id="menu" aria-label="Hauptnavigation">
+  <div class="menu__inner">
+    <ol class="menu__list">
+      <li><a href="leistungen.html"><span class="n">01</span>Leistungen</a></li>
+      <li><a href="projekte.html"><span class="n">02</span>Projekte</a></li>
+      <li><a href="wettbewerbe.html"><span class="n">03</span>Wettbewerbe</a></li>
+      <li><a href="buero.html"><span class="n">04</span>Büro</a></li>
+      <li><a href="journal.html"><span class="n">05</span>Journal</a></li>
+      <li><a href="kontakt.html"><span class="n">06</span>Kontakt</a></li>
+      <li><a href="partner.html"><span class="n">07</span>Partner</a></li>
+    </ol>
+    <div class="menu__side">
+      <p class="menu__h">Planung im Bezirk</p>
+      <ul><li><a href="planung-prenzlauer-berg.html">Prenzlauer Berg</a></li><li><a href="planung-charlottenburg.html">Charlottenburg</a></li><li><a href="planung-zehlendorf.html">Zehlendorf</a></li><li><a href="planung-mitte.html">Mitte</a></li></ul>
+      <p class="menu__h">Ratgeber</p>
+      <ul><li><a href="leistungsphasen-hoai.html">Leistungsphasen der HOAI</a></li><li><a href="journal-altbausanierung-berlin.html">Altbausanierung in Berlin</a></li></ul>
+      <a class="btn btn--light" href="kontakt.html">Projekt anfragen <span class="arrow" aria-hidden="true">→</span></a>
+    </div>
   </div>
 </nav>
 
 <main id="main">
 
-  <!-- HERO mit Hintergrundbild -->
-  <section class="hero-bg">
-    <div class="hero-bg__media">
-      <img src="assets/img/projekte/marienfelde-fassade-detail-hero.webp"
-           srcset="assets/img/projekte/marienfelde-fassade-detail-hero-932.webp 932w, assets/img/projekte/marienfelde-fassade-detail-hero.webp 1398w"
-           sizes="100vw" width="1398" height="1152" fetchpriority="high" decoding="async"
-           alt="Gefaltete Metallfassade eines Wohnhauses in Berlin, Referenzprojekt Marienfelde">
+  <!-- BÜHNE: Projekte im Wechsel -->
+  <section class="stage" aria-labelledby="hero-h" data-stage>
+    <div class="stage__intro">
+      <h1 id="hero-h" class="stage__h1">Planungsbüro für Architektur und Bauplanung in Berlin</h1>
+      <p class="stage__lead">Umbau, Sanierung, Anbau und Neubau: vom ersten Entwurf bis zur Baustelle, mit über 20 Jahren Erfahrung und einem festen Ansprechpartner.</p>
+      <a class="btn btn--light" href="kontakt.html">Projekt anfragen <span class="arrow" aria-hidden="true">→</span></a>
     </div>
-    <div class="hero-bg__inner wrap">
-      <div class="hero-bg__text" data-enter>
-        <p class="eyebrow">Sinke Planung · Berlin</p>
-        <h1 class="hero__title hero__title--long mt-2">Planungsbüro für Umbau, Sanierung und Anbau <span class="thin">in&nbsp;Berlin.</span></h1>
-        <p class="lead mt-3">Wir planen Ihr Bauvorhaben vom ersten Entwurf bis zur Umsetzung: mit über 20 Jahren Erfahrung und einem festen Ansprechpartner.</p>
-        <div class="cluster mt-3">
-          <a class="btn btn--clay" href="kontakt.html">Projekt anfragen <span class="arrow" aria-hidden="true">→</span></a>
-          <a class="btn btn--ghost" href="leistungen.html">Leistungen ansehen</a>
+    <ul class="stage__slides" aria-live="polite">
+      <li class="stage__slide is-active" data-slide>
+        <div class="stage__media"><img src="assets/img/projekte/marienfelde-fassade-detail-hero.webp" width="1398" height="1152" alt="Gefaltete Metallfassade des Wohnhauses Marienfelde in Berlin" decoding="async" fetchpriority="high"></div>
+        <div class="stage__text">
+          <p class="stage__title"><a href="projekte.html#marienfelde">Marienfelde</a></p>
+          <p class="stage__cap">Wohnungsbau in Berlin</p>
         </div>
-      </div>
+      </li>
+      <li class="stage__slide" data-slide aria-hidden="true">
+        <div class="stage__media"><img src="assets/img/projekte/spreedreieck-fassade.webp" width="643" height="865" alt="Geschwungene Glasfassade des Bürogebäudes Spreedreieck in Berlin-Mitte" decoding="async" loading="lazy"></div>
+        <div class="stage__text">
+          <p class="stage__title"><a href="projekte.html#spreedreieck">Spreedreieck</a></p>
+          <p class="stage__cap">Büro- und Geschäftshaus in Berlin-Mitte</p>
+        </div>
+      </li>
+      <li class="stage__slide" data-slide aria-hidden="true">
+        <div class="stage__media"><img src="assets/img/projekte/cordee-des-alpes-aussenansicht.webp" width="757" height="652" alt="Holzfassaden des Projekts Cordée des Alpes in Verbier im Schnee" decoding="async" loading="lazy"></div>
+        <div class="stage__text">
+          <p class="stage__title"><a href="projekte.html#cordee-des-alpes">Cordée des Alpes</a></p>
+          <p class="stage__cap">Innenausbau in Verbier, Schweiz</p>
+        </div>
+      </li>
+      <li class="stage__slide" data-slide aria-hidden="true">
+        <div class="stage__media"><img src="assets/img/projekte/glockenweiss-stadtvillen-garten.webp" width="610" height="525" alt="Weiße Stadtvillen der Wohnanlage Glockenweiß im Grünen" decoding="async" loading="lazy"></div>
+        <div class="stage__text">
+          <p class="stage__title"><a href="projekte.html#glockenweiss">Glockenweiß</a></p>
+          <p class="stage__cap">Wohnungsbau in Berlin</p>
+        </div>
+      </li>
+      <li class="stage__slide" data-slide aria-hidden="true">
+        <div class="stage__media"><img src="assets/img/projekte/boothub-aussenansicht.webp" width="679" height="397" alt="Bürogebäude BootHub in Potsdam mit vertikal gegliederter Fassade" decoding="async" loading="lazy"></div>
+        <div class="stage__text">
+          <p class="stage__title"><a href="projekte.html#boothub">BootHub</a></p>
+          <p class="stage__cap">Bürogebäude in Potsdam</p>
+        </div>
+      </li>
+    </ul>
+    <ol class="stage__dots" aria-label="Projekt wählen"><li><button type="button" data-goto="0" aria-label="Projekt 1: Marienfelde" aria-current="true">01</button></li><li><button type="button" data-goto="1" aria-label="Projekt 2: Spreedreieck">02</button></li><li><button type="button" data-goto="2" aria-label="Projekt 3: Cordée des Alpes">03</button></li><li><button type="button" data-goto="3" aria-label="Projekt 4: Glockenweiß">04</button></li><li><button type="button" data-goto="4" aria-label="Projekt 5: BootHub">05</button></li></ol>
+    <div class="stage__nav">
+      <button type="button" class="stage__arrow" data-prev aria-label="Vorheriges Projekt">←</button>
+      <button type="button" class="stage__arrow" data-next aria-label="Nächstes Projekt">→</button>
     </div>
   </section>
 
@@ -407,7 +399,7 @@
         <div class="stat"><dt class="stat__label">Erfahrung</dt><dd class="stat__value">Über 20 Jahre in Architektur und Planung</dd></div>
         <div class="stat"><dt class="stat__label">Referenz</dt><dd class="stat__value">Über 2.000 Wohneinheiten in bisheriger Tätigkeit verantwortet</dd></div>
         <div class="stat"><dt class="stat__label">Leistungen</dt><dd class="stat__value">Umbau, Sanierung, Anbau, Aufstockung, Innenausbau, Neubau</dd></div>
-        <div class="stat"><dt class="stat__label">Einsatzgebiet</dt><dd class="stat__value">Ganz Berlin, mit einem festen Ansprechpartner</dd></div>
+        <div class="stat"><dt class="stat__label">Einsatzgebiet</dt><dd class="stat__value">Schwerpunkt Berlin, Projekte in Deutschland und Europa</dd></div>
       </dl>
     </div>
   </section>
@@ -435,7 +427,7 @@
       </a>
       <a class="project" href="leistungen.html#innenausbau-umnutzung">
         <div class="project__media"><span class="project__cat">Innenausbau</span>
-          <img src="assets/img/projekte/corde-des-alps-lounge-kamin.webp" width="580" height="436" loading="lazy" decoding="async" alt="Lounge mit Kamin, Innenausbau im Projekt Corde des Alps"></div>
+          <img src="assets/img/projekte/cordee-des-alpes-lounge-kamin.webp" width="580" height="436" loading="lazy" decoding="async" alt="Lounge mit Kamin, Innenausbau im Projekt Cordée des Alpes in Verbier"></div>
         <div class="project__body"><h3 class="project__title">Innenausbau &amp; Umnutzung</h3><div class="project__meta">Grundriss ·<br>Raumkonzept</div></div>
       </a>
       <a class="project" href="leistungen.html#neubau">
@@ -460,7 +452,7 @@
         <p class="eyebrow">Referenzen</p>
         <a class="arrow-link" href="projekte.html">Alle Projekte ansehen <span class="arrow" aria-hidden="true">→</span></a>
       </div>
-      <h2 class="h-xl balance">Referenzen aus unserer bisherigen Tätigkeit.</h2>
+      <h2 class="h-xl balance">Referenzen in Berlin, Deutschland und Europa.</h2>
       <p class="prose">Eine Auswahl von Projekten, die wir in leitender Rolle in vorheriger Tätigkeit verantwortet haben.</p>
     </div>
 
@@ -523,11 +515,11 @@
       </details>
       <details>
         <summary>Was kostet die Planung?<span class="plus" aria-hidden="true"></span></summary>
-        <p>Das Honorar richtet sich nach Art, Größe und Schwierigkeit des Vorhabens und danach, welche Leistungsphasen Sie beauftragen. Als Orientierung dient die Honorarordnung für Architekten und Ingenieure (HOAI). Ein Angebot für Ihr Vorhaben erstellen wir auf Anfrage.</p>
+        <p>Das Honorar richtet sich nach Größe und Schwierigkeit des Vorhabens und nach den beauftragten Leistungsphasen. Orientierung gibt die Honorarordnung HOAI: Bis zum Bauantrag, also in den <a class="link-underline" href="leistungsphasen-hoai.html">Leistungsphasen 1 bis 4</a>, fallen 27 Prozent des Gesamthonorars an. Ein Angebot erstellen wir auf Anfrage.</p>
       </details>
       <details>
-        <summary>In welchen Berliner Bezirken planen Sie?<span class="plus" aria-hidden="true"></span></summary>
-        <p>Wir planen in ganz Berlin, unter anderem in <a class="link-underline" href="planung-prenzlauer-berg.html">Prenzlauer Berg</a>, <a class="link-underline" href="planung-charlottenburg.html">Charlottenburg</a>, <a class="link-underline" href="planung-zehlendorf.html">Zehlendorf</a> und <a class="link-underline" href="planung-mitte.html">Mitte</a>.</p>
+        <summary>Wo plant Sinke Planung?<span class="plus" aria-hidden="true"></span></summary>
+        <p>Unser Schwerpunkt ist Berlin, unter anderem <a class="link-underline" href="planung-prenzlauer-berg.html">Prenzlauer Berg</a>, <a class="link-underline" href="planung-charlottenburg.html">Charlottenburg</a>, <a class="link-underline" href="planung-zehlendorf.html">Zehlendorf</a> und <a class="link-underline" href="planung-mitte.html">Mitte</a>. Projekte außerhalb Berlins planen wir ebenfalls: Unsere Referenzen liegen in Berlin, Potsdam und in Verbier in der Schweiz.</p>
       </details>
       <details>
         <summary>Welche Erfahrung bringen Sie mit?<span class="plus" aria-hidden="true"></span></summary>
@@ -559,32 +551,21 @@
 
 <footer class="site-footer">
   <div class="wrap">
+    <p class="footer-word" aria-hidden="true">Sinke Planung</p>
     <div class="footer-grid">
       <div>
-        <svg class="footer-brand__mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" fill="#ece8dd"/><rect x="7" y="17" width="4" height="9" fill="#16150f"/><rect x="14" y="12" width="4" height="14" fill="#16150f"/><rect x="21" y="7" width="4" height="19" fill="#16150f"/><rect x="6" y="26" width="20" height="2" fill="#a24e34"/></svg>
-        <p class="h-md" style="max-width:22ch">Planungsbüro für Umbau, Sanierung, Anbau und Neubau in Berlin.</p>
-        <!-- TODO: echte Anschrift, Telefonnummer und E-Mail einsetzen (überall identisch) -->
-        <address class="footer-address">Sinke Planung<br>Beispielstraße 1<br>10115 Berlin<br>
-          <a class="link-underline" href="tel:+49300000000">+49 30 000 000</a><br>
-          <a class="link-underline" href="mailto:buero@sinke-planung.de">buero@sinke-planung.de</a>
-        </address>
+        <p class="footer-lede">Planungsbüro für Architektur und Bauplanung in Berlin: Umbau, Sanierung, Anbau und Neubau.</p>
+        <!-- TODO: Anschrift, Telefon und E-Mail ergänzen, sobald sie feststehen (auch im JSON-LD) -->
+        <p class="footer-meta">Montag bis Freitag, 9 bis 18 Uhr<br><a href="kontakt.html">Kontaktformular</a></p>
       </div>
-      <div>
-        <p class="footer-h">Navigation</p>
-        <ul class="footer-nav"><li><a href="leistungen.html">Leistungen</a></li><li><a href="projekte.html">Projekte</a></li><li><a href="buero.html">Büro</a></li><li><a href="journal.html">Journal</a></li><li><a href="kontakt.html">Kontakt</a></li><li><a href="partner.html">Partner</a></li></ul>
-        <p class="footer-h">Planung im Bezirk</p>
-        <ul class="footer-nav"><li><a href="planung-prenzlauer-berg.html">Prenzlauer Berg</a></li><li><a href="planung-charlottenburg.html">Charlottenburg</a></li><li><a href="planung-zehlendorf.html">Zehlendorf</a></li><li><a href="planung-mitte.html">Mitte</a></li></ul>
-      </div>
-      <div>
-        <p class="footer-h">Rechtliches</p>
-        <ul class="footer-nav"><li><a href="impressum.html">Impressum</a></li><li><a href="datenschutz.html">Datenschutz</a></li></ul>
-        <p class="footer-h">Folgen</p>
-        <ul class="footer-nav"><li><a href="https://www.linkedin.com/company/sinke-planung" rel="noopener me">LinkedIn</a></li><li><a href="https://www.instagram.com/sinke.planung" rel="noopener me">Instagram</a></li></ul>
-      </div>
+      <div><p class="footer-h">Navigation</p><ul class="footer-nav"><li><a href="leistungen.html">Leistungen</a></li><li><a href="projekte.html">Projekte</a></li><li><a href="wettbewerbe.html">Wettbewerbe</a></li><li><a href="buero.html">Büro</a></li><li><a href="journal.html">Journal</a></li><li><a href="kontakt.html">Kontakt</a></li><li><a href="partner.html">Partner</a></li></ul></div>
+      <div><p class="footer-h">Planung im Bezirk</p><ul class="footer-nav"><li><a href="planung-prenzlauer-berg.html">Prenzlauer Berg</a></li><li><a href="planung-charlottenburg.html">Charlottenburg</a></li><li><a href="planung-zehlendorf.html">Zehlendorf</a></li><li><a href="planung-mitte.html">Mitte</a></li></ul></div>
+      <div><p class="footer-h">Ratgeber</p><ul class="footer-nav"><li><a href="leistungsphasen-hoai.html">Leistungsphasen HOAI</a></li><li><a href="journal-anbau-aufstockung-baugenehmigung.html">Bauantrag für Anbau</a></li><li><a href="journal-grundriss-optimieren.html">Grundriss ändern</a></li></ul>
+        <p class="footer-h">Rechtliches</p><ul class="footer-nav"><li><a href="impressum.html">Impressum</a></li><li><a href="datenschutz.html">Datenschutz</a></li></ul></div>
     </div>
     <div class="footer-bottom">
-      <span>© <span data-year>2026</span> Sinke Planung, Planungsbüro Berlin</span>
-      <span>Umbau · Sanierung · Anbau · Neubau</span>
+      <span>© <span data-year>2026</span> Sinke Planung</span>
+      <span>Berlin · Deutschland · Europa</span>
     </div>
   </div>
 </footer>

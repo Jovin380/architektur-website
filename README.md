@@ -6,7 +6,7 @@ Statische, SEO-optimierte Website für ein Planungsbüro in Berlin
 - **Keine Abhängigkeiten, kein Build-Schritt.** Reines HTML/CSS/JS → schnell, stabil, überall hostbar (bestes Fundament für SEO & Core Web Vitals).
 - **Mobile-first & barrierearm** (Skip-Link, Fokus-Stile, `prefers-reduced-motion`, semantisches HTML).
 - **Für Suchmaschinen und KI-Suche aufbereitet** (strukturierte Daten, FAQ, Ratgeber, `llms.txt`), siehe Abschnitt 8.
-- **Design bewusst redaktionell-architektonisch** (Raster, Haarlinien, viel Weißraum, ein zurückhaltender Ton-Akzent) — nicht im typischen „KI-Look".
+- **Design:** Anthrazit, Weiß und Hellgrau, große gesperrte Versalien (Schrift Archivo, lokal ausgeliefert), feste Seitenleiste links mit Vollbild-Menü, Projekt-Bühne auf der Startseite. Keine Rundungen, keine Schatten.
 
 ---
 
@@ -55,13 +55,12 @@ Diese Platzhalter sind absichtlich klar markiert (Suche im Ordner):
 | Suchen nach | Ersetzen durch | Wo |
 |---|---|---|
 | `https://bonvico.com` | endgültige Domain (bonvico.com ist die vorläufige Adresse) | alle HTML, `sitemap.xml`, `robots.txt`, `llms.txt`, `feed.xml` |
-| `Beispielstraße 1` / `10115` | echte Anschrift | Footer aller Seiten, `kontakt.html`, JSON-LD, `impressum.html` |
-| `+49 30 000 000` / `+49300000000` | echte Telefonnummer | Footer, `kontakt.html`, Panel, JSON-LD |
-| `buero@sinke-planung.de` | echte E-Mail | überall |
+| Anschrift | echte Anschrift ergänzen (aktuell wird keine gezeigt) | `kontakt.html` (TODO-Kommentar), JSON-LD in `index.html` und `kontakt.html`, `impressum.html` |
+| Telefon, E-Mail | echte Angaben ergänzen (aktuell nur das Formular) | `kontakt.html`, JSON-LD (`telephone`, `email`), `impressum.html` |
 | `[ ... ]` (eckige Klammern) | echte Angaben | `impressum.html`, `datenschutz.html`, `buero.html` (Team) |
 | `<!-- TODO ... -->` | Team, Anfahrt, Adresse | `buero.html` (Team), `kontakt.html` (Route planen), Footer |
-| `52.5200` / `13.4050` | echte Geo-Koordinaten | JSON-LD in `index.html` und `kontakt.html` |
-| LinkedIn/Instagram-URLs | echte Profile oder entfernen | Footer, JSON-LD |
+| Geo-Koordinaten | mit der echten Anschrift ergänzen | JSON-LD (`geo`) in `index.html` und `kontakt.html` |
+| LinkedIn/Instagram | echte Profile ergänzen (aktuell keine verlinkt) | Footer (`.socials`), JSON-LD (`sameAs`) |
 
 **Wichtig für lokale SEO:** Name, Adresse, Telefon (**NAP**) müssen überall **identisch** sein — auch später in Verzeichnissen und im Google-Unternehmensprofil.
 
@@ -112,6 +111,25 @@ Rechtsangaben mit Stand-Datum versehen und bei Gesetzesänderungen aktualisieren
 
 ---
 
+### Wettbewerbe einfügen
+
+`wettbewerbe.html` ist mit Platzhaltern vorbereitet (drei Wettbewerbe, je drei Bilder). Die Platzhalter sind in der
+Vorschau rot gestrichelt markiert; die Seite steht bis zum Befüllen auf `noindex` und fehlt in `sitemap.xml`.
+
+Pro Wettbewerb werden gebraucht: Titel, Ort, Jahr, Auslober, Verfahren, Ergebnis, eigene Arbeit oder frühere
+Tätigkeit, zwei bis vier Sätze zur Aufgabe und zum Entwurf und drei Bilder:
+
+| Datei | Inhalt | Format |
+|---|---|---|
+| `assets/img/wettbewerbe/wettbewerb-1-1.webp` | Visualisierung oder Hauptbild | quer 16:10, mind. 2000 px breit |
+| `assets/img/wettbewerbe/wettbewerb-1-2.webp` | Lageplan oder Grundriss | 4:3 |
+| `assets/img/wettbewerbe/wettbewerb-1-3.webp` | Schnitt, Ansicht oder Modellfoto | 4:3 |
+
+Für Wettbewerb 2 und 3 entsprechend `wettbewerb-2-…`, `wettbewerb-3-…`. Nach dem Einfügen `robots` auf
+`index, follow` stellen und die Seite in `sitemap.xml` und `llms.txt` aufnehmen.
+
+---
+
 ## 7. Kontaktformular aktivieren
 
 Das Formular in `kontakt.html` ist **für Netlify Forms vorbereitet** und leitet nach dem Absenden auf
@@ -157,18 +175,22 @@ und das versteckte Feld `form-name` entfernen und dort `danke.html` als Weiterle
 ```
 ├── index.html                  Startseite (Büro-Definition, Fakten, Leistungen, Referenzen, FAQ)
 ├── leistungen.html             4 Leistungen, Ablauf, FAQ
+├── leistungsphasen-hoai.html   Ratgeber: Leistungsphasen 1 bis 9 der HOAI mit Anteilen und Kosten
 ├── projekte.html               7 Referenzprojekte mit allen Bildern (Lightbox)
 ├── planung-*.html              Bezirksseiten: Prenzlauer Berg, Charlottenburg, Zehlendorf, Mitte
 ├── buero.html                  Büro, Haltung (Team: TODO)
 ├── journal.html                Übersicht der Ratgeber
-├── journal-*.html              5 Ratgeber-Beiträge
+├── journal-*.html              5 weitere Ratgeber-Beiträge
 ├── kontakt.html  danke.html    Kontakt mit Formular, Bestätigungsseite (noindex)
 ├── partner.html                Netzwerk der Fachplaner
 ├── impressum.html  datenschutz.html   Rechtstexte (Vorlagen, prüfen lassen!)
 ├── 404.html
 ├── sitemap.xml  robots.txt  llms.txt  feed.xml  site.webmanifest  favicon.ico  netlify.toml
 └── assets/
-    ├── css/style.css           komplettes Design-System (Design-Tokens oben)
-    ├── js/main.js              Mobile-Nav, Projektfilter, Lightbox
+    ├── css/style.css           komplettes Design (Tokens oben)
+    ├── js/main.js              Menü, Projekt-Bühne, Lightbox
+    ├── fonts/                  Archivo, lokal ausgeliefert (kein Abruf bei Google)
     └── img/projekte/           Projektfotos (WebP); dazu Favicon, Icons, og-cover.jpg
 ```
+
+**Design:** Alle Regeln stehen in `assets/css/style.css` (Farben und Schrift oben als Tokens), Menü und Projekt-Bühne in `assets/js/main.js`. Die Projekte der Bühne auf der Startseite stehen in `index.html` im Abschnitt `stage`.
