@@ -6,7 +6,7 @@ Statische, SEO-optimierte Website für ein Planungsbüro in Berlin
 - **Keine Abhängigkeiten, kein Build-Schritt.** Reines HTML/CSS/JS → schnell, stabil, überall hostbar (bestes Fundament für SEO & Core Web Vitals).
 - **Mobile-first & barrierearm** (Skip-Link, Fokus-Stile, `prefers-reduced-motion`, semantisches HTML).
 - **Für Suchmaschinen und KI-Suche aufbereitet** (strukturierte Daten, FAQ, Ratgeber, `llms.txt`), siehe Abschnitt 8.
-- **Design nach dem taste-Skill:** ein Raster, eine Schrift (Schibsted Grotesk), die Farben des Büros, Fotos in Originalgröße.
+- **Design:** Anthrazit, Weiß und Hellgrau, große gesperrte Versalien (Schrift Archivo, lokal ausgeliefert), feste Seitenleiste links mit Vollbild-Menü, Projekt-Bühne auf der Startseite. Keine Rundungen, keine Schatten.
 
 ---
 
@@ -187,16 +187,10 @@ und das versteckte Feld `form-name` entfernen und dort `danke.html` als Weiterle
 ├── 404.html
 ├── sitemap.xml  robots.txt  llms.txt  feed.xml  site.webmanifest  favicon.ico  netlify.toml
 └── assets/
-    ├── system.css  system.js   Baukasten des taste-Skills (Raster, Schrift, Buttons, Navigation, Formular)
-    ├── layout/ motion/ ui/ moments/   weitere Teile des Baukastens (Hero, Hover, Karten, Textmoment)
-    ├── site.css                eigene Regeln: Schrift, Farben des Büros, Unterseiten, Artikel
-    ├── fonts/                  Schibsted Grotesk, lokal ausgeliefert (kein Abruf bei Google)
+    ├── css/style.css           komplettes Design (Tokens oben)
+    ├── js/main.js              Menü, Projekt-Bühne, Lightbox
+    ├── fonts/                  Archivo, lokal ausgeliefert (kein Abruf bei Google)
     └── img/projekte/           Projektfotos (WebP); dazu Favicon, Icons, og-cover.jpg
 ```
 
-**Design:** Die Seiten sind mit dem Baukasten des [taste-Skills](https://github.com/Leonxlnx/taste-skill)
-(tasteskill 2.5.1, MIT-Lizenz) gebaut. Die Startseite folgt seinem Raster streng (ein Abschnitt pro
-Bildschirm); auf den Unterseiten fließen die Abschnitte frei, weil lange Texte nicht in dieses Raster passen.
-Die Dateien des Baukastens (`system.css`, `system.js`, `layout/`, `motion/`, `ui/`, `moments/`) nicht von Hand
-ändern; eigene Anpassungen gehören in `assets/site.css`. Farben und Schrift stehen dort im `:root`-Block.
-Fotos werden höchstens in ihrer Originalgröße gezeigt, damit sie scharf bleiben.
+**Design:** Alle Regeln stehen in `assets/css/style.css` (Farben und Schrift oben als Tokens), Menü und Projekt-Bühne in `assets/js/main.js`. Die Projekte der Bühne auf der Startseite stehen in `index.html` im Abschnitt `stage`.

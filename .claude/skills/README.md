@@ -11,3 +11,9 @@ automatisch, wenn in diesem Repo gearbeitet wird. Alle unter MIT-Lizenz, unverä
 
 Einige Skills verweisen auf Skripte oder kostenpflichtige Datenquellen (DataForSEO, Ahrefs) aus ihren
 Original-Repos; die Anleitungen funktionieren auch ohne sie.
+
+## Design
+
+| Skill | Wofür | Quelle |
+|---|---|---|
+| `design-system-extraction` | Misst Schriften, Farben, Abstände und Raster einer bestehenden Website aus ihrem CSS, um einen Stil nachzuempfinden, ohne Inhalte zu kopieren | [maiconlara/design-system-extraction](https://github.com/maiconlara/design-system-extraction) |

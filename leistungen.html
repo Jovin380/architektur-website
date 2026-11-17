@@ -1,16 +1,17 @@
-<!doctype html>
-<html lang="de" data-type="service" data-radius="soft" data-buttons="solid" data-motion>
+<!DOCTYPE html>
+<html lang="de">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Leistungen – Umbau, Sanierung, Anbau, Neubau | Sinke Planung</title>
 <meta name="description" content="Planungsleistungen in Berlin: Umbau und Sanierung, Anbau, Aufstockung und Dachausbau, Innenausbau und Umnutzung, Neubau. Vom Entwurf bis zur Baustelle.">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-<meta name="theme-color" content="#f2efe8">
-<meta name="site-kind" content="other">
-<meta name="page-type" content="service">
-<!-- Vorläufige Domain: bei einem Domainwechsel https://bonvico.com überall im Projekt ersetzen -->
+<meta name="author" content="Sinke Planung">
+<meta name="theme-color" content="#232323">
+
+<!-- Kanonische URL. TODO: Domain https://bonvico.com überall im Projekt durch die echte Domain ersetzen -->
 <link rel="canonical" href="https://bonvico.com/leistungen.html">
+
 <meta property="og:type" content="website">
 <meta property="og:locale" content="de_DE">
 <meta property="og:site_name" content="Sinke Planung">
@@ -20,440 +21,453 @@
 <meta property="og:image" content="https://bonvico.com/assets/img/og-cover.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Sinke Planung, Planungsbüro für Umbau, Sanierung, Anbau und Neubau in Berlin">
+<meta property="og:image:alt" content="Sinke Planung – Planungsbüro für Umbau, Sanierung, Anbau und Neubau in Berlin">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Leistungen – Umbau, Sanierung, Anbau, Neubau | Sinke Planung">
 <meta name="twitter:description" content="Planungsleistungen in Berlin: Umbau und Sanierung, Anbau, Aufstockung und Dachausbau, Innenausbau und Umnutzung, Neubau. Vom Entwurf bis zur Baustelle.">
 <meta name="twitter:image" content="https://bonvico.com/assets/img/og-cover.jpg">
+
 <link rel="icon" href="favicon.ico" sizes="48x48">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
 <link rel="alternate" type="application/rss+xml" title="Sinke Planung – Journal" href="feed.xml">
-<link rel="preload" href="assets/fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/system.css">
-<link rel="stylesheet" href="assets/ui/cards.css">
-<link rel="stylesheet" href="assets/motion/motion.css">
-<link rel="stylesheet" href="assets/layout/layout.css">
-<link rel="stylesheet" href="assets/site.css">
-<script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
+<link rel="preload" href="assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/style.css">
+
+<!-- Strukturierte Daten (Schema.org) -->
 <script type="application/ld+json">
 {
- "@context": "https://schema.org",
- "@graph": [
-  {
-   "@type": "Organization",
-   "@id": "https://bonvico.com/#org",
-   "name": "Sinke Planung",
-   "url": "https://bonvico.com/"
-  },
-  {
-   "@type": "WebSite",
-   "@id": "https://bonvico.com/#website",
-   "url": "https://bonvico.com/",
-   "name": "Sinke Planung",
-   "description": "Planungsbüro in Berlin für Umbau, Sanierung, Anbau und Neubau",
-   "inLanguage": "de-DE",
-   "publisher": {
-    "@id": "https://bonvico.com/#org"
-   }
-  },
-  {
-   "@type": "BreadcrumbList",
-   "@id": "https://bonvico.com/leistungen.html#breadcrumb",
-   "itemListElement": [
+  "@context": "https://schema.org",
+  "@graph": [
     {
-     "@type": "ListItem",
-     "position": 1,
-     "name": "Startseite",
-     "item": "https://bonvico.com/"
+      "@type": "Organization",
+      "@id": "https://bonvico.com/#org",
+      "name": "Sinke Planung",
+      "url": "https://bonvico.com/"
     },
     {
-     "@type": "ListItem",
-     "position": 2,
-     "name": "Leistungen",
-     "item": "https://bonvico.com/leistungen.html"
+      "@type": "WebSite",
+      "@id": "https://bonvico.com/#website",
+      "url": "https://bonvico.com/",
+      "name": "Sinke Planung",
+      "description": "Planungsbüro in Berlin für Umbau, Sanierung, Anbau und Neubau",
+      "inLanguage": "de-DE",
+      "publisher": {
+        "@id": "https://bonvico.com/#org"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://bonvico.com/leistungen.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Startseite",
+          "item": "https://bonvico.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Leistungen",
+          "item": "https://bonvico.com/leistungen.html"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://bonvico.com/leistungen.html#webpage",
+      "url": "https://bonvico.com/leistungen.html",
+      "name": "Leistungen – Umbau, Sanierung, Anbau, Neubau | Sinke Planung",
+      "description": "Planungsleistungen in Berlin: Umbau und Sanierung, Anbau, Aufstockung und Dachausbau, Innenausbau und Umnutzung, Neubau. Vom Entwurf bis zur Baustelle.",
+      "inLanguage": "de-DE",
+      "isPartOf": {
+        "@id": "https://bonvico.com/#website"
+      },
+      "about": {
+        "@id": "https://bonvico.com/#org"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://bonvico.com/assets/img/og-cover.jpg"
+      },
+      "dateModified": "2026-11-16",
+      "breadcrumb": {
+        "@id": "https://bonvico.com/leistungen.html#breadcrumb"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://bonvico.com/leistungen.html#umbau-sanierung",
+      "name": "Umbau & Sanierung",
+      "description": "Planung von Umbau, Modernisierung und energetischer Sanierung von Wohnungen und Häusern im Bestand – vom Aufmaß bis zum fertigen Entwurf, auch im bewohnten Zustand.",
+      "serviceType": "Umbau & Sanierung",
+      "url": "https://bonvico.com/leistungen.html#umbau-sanierung",
+      "provider": {
+        "@id": "https://bonvico.com/#org"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Berlin",
+        "sameAs": "https://www.wikidata.org/wiki/Q64"
+      },
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Private und gewerbliche Bauherren"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://bonvico.com/leistungen.html#anbau-aufstockung",
+      "name": "Anbau, Aufstockung & Dachausbau",
+      "description": "Planung zusätzlichen Wohnraums durch Anbau, Aufstockung oder Dachausbau – einschließlich der Prüfung, was baulich und planungsrechtlich möglich ist.",
+      "serviceType": "Anbau, Aufstockung & Dachausbau",
+      "url": "https://bonvico.com/leistungen.html#anbau-aufstockung",
+      "provider": {
+        "@id": "https://bonvico.com/#org"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Berlin",
+        "sameAs": "https://www.wikidata.org/wiki/Q64"
+      },
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Private und gewerbliche Bauherren"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://bonvico.com/leistungen.html#innenausbau-umnutzung",
+      "name": "Innenausbau & Umnutzung",
+      "description": "Grundrissplanung, Raumkonzept und Umnutzung bestehender Flächen – von der Wohnung bis zur Gewerbe- oder Praxisfläche.",
+      "serviceType": "Innenausbau & Umnutzung",
+      "url": "https://bonvico.com/leistungen.html#innenausbau-umnutzung",
+      "provider": {
+        "@id": "https://bonvico.com/#org"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Berlin",
+        "sameAs": "https://www.wikidata.org/wiki/Q64"
+      },
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Private und gewerbliche Bauherren"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://bonvico.com/leistungen.html#neubau",
+      "name": "Neubau",
+      "description": "Entwurf und Planung von Neubauten – vom Einfamilienhaus über das Doppelhaus bis zum Mehrfamilienhaus.",
+      "serviceType": "Neubau",
+      "url": "https://bonvico.com/leistungen.html#neubau",
+      "provider": {
+        "@id": "https://bonvico.com/#org"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Berlin",
+        "sameAs": "https://www.wikidata.org/wiki/Q64"
+      },
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Private und gewerbliche Bauherren"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://bonvico.com/leistungen.html#faq",
+      "inLanguage": "de-DE",
+      "isPartOf": {
+        "@id": "https://bonvico.com/leistungen.html#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Was ist der Unterschied zwischen Anbau, Aufstockung und Dachausbau?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ein Anbau erweitert das Gebäude in der Fläche, zum Beispiel zum Garten hin. Eine Aufstockung setzt ein zusätzliches Geschoss auf das bestehende Haus. Beim Dachausbau wird ein vorhandener Dachraum zu Wohnraum, meist innerhalb der bestehenden Dachform. Welche Lösung passt, hängt von Grundstück, Statik und Baurecht ab."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Brauche ich für einen Umbau in Berlin eine Baugenehmigung?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Das hängt vom Vorhaben ab. Änderungen im Inneren ohne Eingriff in tragende Bauteile sind oft ohne Verfahren möglich. Anbauten, Aufstockungen, Eingriffe in die Statik, Nutzungsänderungen und Änderungen an der Fassade sind in der Regel bei der Bauaufsicht des Bezirks zu beantragen oder anzuzeigen. Die Bauordnung für Berlin wurde 2024 und 2026 mehrfach geändert. Wir klären deshalb zu Beginn, welches Verfahren für Ihr Vorhaben gilt."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was sind die Leistungsphasen der HOAI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Die Honorarordnung für Architekten und Ingenieure (HOAI) gliedert die Planung eines Gebäudes in neun Leistungsphasen: 1 Grundlagenermittlung, 2 Vorplanung, 3 Entwurfsplanung, 4 Genehmigungsplanung, 5 Ausführungsplanung, 6 Vorbereitung der Vergabe, 7 Mitwirkung bei der Vergabe, 8 Objektüberwachung (Bauüberwachung) und 9 Objektbetreuung. Die Phasen lassen sich einzeln oder im Paket beauftragen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kann ich während der Sanierung in meiner Wohnung bleiben?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Häufig ja. Wir planen Umbau und Sanierung Schritt für Schritt, auch im bewohnten Zustand. Ob das sinnvoll ist, hängt vom Umfang der Arbeiten ab, etwa bei Bädern, Leitungen oder Eingriffen in die Decken."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Planen Sie auch Gewerbe- und Praxisflächen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Beim Innenausbau und bei Umnutzungen planen wir neben Wohnungen auch Büro-, Gewerbe- und Praxisflächen, einschließlich Grundriss, Raumaufteilung, Material und Licht."
+          }
+        }
+      ]
     }
-   ]
-  },
-  {
-   "@type": "WebPage",
-   "@id": "https://bonvico.com/leistungen.html#webpage",
-   "url": "https://bonvico.com/leistungen.html",
-   "name": "Leistungen – Umbau, Sanierung, Anbau, Neubau | Sinke Planung",
-   "description": "Planungsleistungen in Berlin: Umbau und Sanierung, Anbau, Aufstockung und Dachausbau, Innenausbau und Umnutzung, Neubau. Vom Entwurf bis zur Baustelle.",
-   "inLanguage": "de-DE",
-   "isPartOf": {
-    "@id": "https://bonvico.com/#website"
-   },
-   "about": {
-    "@id": "https://bonvico.com/#org"
-   },
-   "primaryImageOfPage": {
-    "@type": "ImageObject",
-    "url": "https://bonvico.com/assets/img/og-cover.jpg"
-   },
-   "dateModified": "2026-11-16",
-   "breadcrumb": {
-    "@id": "https://bonvico.com/leistungen.html#breadcrumb"
-   }
-  },
-  {
-   "@type": "Service",
-   "@id": "https://bonvico.com/leistungen.html#umbau-sanierung",
-   "name": "Umbau & Sanierung",
-   "description": "Planung von Umbau, Modernisierung und energetischer Sanierung von Wohnungen und Häusern im Bestand – vom Aufmaß bis zum fertigen Entwurf, auch im bewohnten Zustand.",
-   "serviceType": "Umbau & Sanierung",
-   "url": "https://bonvico.com/leistungen.html#umbau-sanierung",
-   "provider": {
-    "@id": "https://bonvico.com/#org"
-   },
-   "areaServed": {
-    "@type": "City",
-    "name": "Berlin",
-    "sameAs": "https://www.wikidata.org/wiki/Q64"
-   },
-   "audience": {
-    "@type": "Audience",
-    "audienceType": "Private und gewerbliche Bauherren"
-   }
-  },
-  {
-   "@type": "Service",
-   "@id": "https://bonvico.com/leistungen.html#anbau-aufstockung",
-   "name": "Anbau, Aufstockung & Dachausbau",
-   "description": "Planung zusätzlichen Wohnraums durch Anbau, Aufstockung oder Dachausbau – einschließlich der Prüfung, was baulich und planungsrechtlich möglich ist.",
-   "serviceType": "Anbau, Aufstockung & Dachausbau",
-   "url": "https://bonvico.com/leistungen.html#anbau-aufstockung",
-   "provider": {
-    "@id": "https://bonvico.com/#org"
-   },
-   "areaServed": {
-    "@type": "City",
-    "name": "Berlin",
-    "sameAs": "https://www.wikidata.org/wiki/Q64"
-   },
-   "audience": {
-    "@type": "Audience",
-    "audienceType": "Private und gewerbliche Bauherren"
-   }
-  },
-  {
-   "@type": "Service",
-   "@id": "https://bonvico.com/leistungen.html#innenausbau-umnutzung",
-   "name": "Innenausbau & Umnutzung",
-   "description": "Grundrissplanung, Raumkonzept und Umnutzung bestehender Flächen – von der Wohnung bis zur Gewerbe- oder Praxisfläche.",
-   "serviceType": "Innenausbau & Umnutzung",
-   "url": "https://bonvico.com/leistungen.html#innenausbau-umnutzung",
-   "provider": {
-    "@id": "https://bonvico.com/#org"
-   },
-   "areaServed": {
-    "@type": "City",
-    "name": "Berlin",
-    "sameAs": "https://www.wikidata.org/wiki/Q64"
-   },
-   "audience": {
-    "@type": "Audience",
-    "audienceType": "Private und gewerbliche Bauherren"
-   }
-  },
-  {
-   "@type": "Service",
-   "@id": "https://bonvico.com/leistungen.html#neubau",
-   "name": "Neubau",
-   "description": "Entwurf und Planung von Neubauten – vom Einfamilienhaus über das Doppelhaus bis zum Mehrfamilienhaus.",
-   "serviceType": "Neubau",
-   "url": "https://bonvico.com/leistungen.html#neubau",
-   "provider": {
-    "@id": "https://bonvico.com/#org"
-   },
-   "areaServed": {
-    "@type": "City",
-    "name": "Berlin",
-    "sameAs": "https://www.wikidata.org/wiki/Q64"
-   },
-   "audience": {
-    "@type": "Audience",
-    "audienceType": "Private und gewerbliche Bauherren"
-   }
-  },
-  {
-   "@type": "FAQPage",
-   "@id": "https://bonvico.com/leistungen.html#faq",
-   "inLanguage": "de-DE",
-   "isPartOf": {
-    "@id": "https://bonvico.com/leistungen.html#webpage"
-   },
-   "mainEntity": [
-    {
-     "@type": "Question",
-     "name": "Was ist der Unterschied zwischen Anbau, Aufstockung und Dachausbau?",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Ein Anbau erweitert das Gebäude in der Fläche, zum Beispiel zum Garten hin. Eine Aufstockung setzt ein zusätzliches Geschoss auf das bestehende Haus. Beim Dachausbau wird ein vorhandener Dachraum zu Wohnraum, meist innerhalb der bestehenden Dachform. Welche Lösung passt, hängt von Grundstück, Statik und Baurecht ab."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Brauche ich für einen Umbau in Berlin eine Baugenehmigung?",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Das hängt vom Vorhaben ab. Änderungen im Inneren ohne Eingriff in tragende Bauteile sind oft ohne Verfahren möglich. Anbauten, Aufstockungen, Eingriffe in die Statik, Nutzungsänderungen und Änderungen an der Fassade sind in der Regel bei der Bauaufsicht des Bezirks zu beantragen oder anzuzeigen. Die Bauordnung für Berlin wurde 2024 und 2026 mehrfach geändert. Wir klären deshalb zu Beginn, welches Verfahren für Ihr Vorhaben gilt."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Was sind die Leistungsphasen der HOAI?",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Die Honorarordnung für Architekten und Ingenieure (HOAI) gliedert die Planung eines Gebäudes in neun Leistungsphasen: 1 Grundlagenermittlung, 2 Vorplanung, 3 Entwurfsplanung, 4 Genehmigungsplanung, 5 Ausführungsplanung, 6 Vorbereitung der Vergabe, 7 Mitwirkung bei der Vergabe, 8 Objektüberwachung (Bauüberwachung) und 9 Objektbetreuung. Die Phasen lassen sich einzeln oder im Paket beauftragen."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Kann ich während der Sanierung in meiner Wohnung bleiben?",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Häufig ja. Wir planen Umbau und Sanierung Schritt für Schritt, auch im bewohnten Zustand. Ob das sinnvoll ist, hängt vom Umfang der Arbeiten ab, etwa bei Bädern, Leitungen oder Eingriffen in die Decken."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Planen Sie auch Gewerbe- und Praxisflächen?",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Ja. Beim Innenausbau und bei Umnutzungen planen wir neben Wohnungen auch Büro-, Gewerbe- und Praxisflächen, einschließlich Grundriss, Raumaufteilung, Material und Licht."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Für wen plant Sinke Planung?",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Für private und gewerbliche Bauherr:innen in Berlin: Eigentümer:innen von Wohnungen und Häusern, Familien, die mehr Platz brauchen, sowie Betriebe und Praxen, die Flächen umbauen oder umnutzen möchten."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Wie läuft ein Projekt mit Sinke Planung ab?",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "In fünf Schritten: Erstgespräch und Besichtigung, Entwurf und Grundriss mit ersten Kostengrößen, Genehmigungsplanung, Ausführungsplanung und Begleitung der Umsetzung auf der Baustelle. Den Ablauf im Einzelnen finden Sie bei den Leistungen."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Welche Erfahrung bringen Sie mit?",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Über 20 Jahre in Architektur und Planung. In leitender Rolle haben wir in unserer bisherigen Tätigkeit über 2.000 Wohneinheiten sowie Schulen und Gewerbebauten in Berlin verantwortet. Diese Erfahrung bringen wir heute persönlich in Ihr Vorhaben ein."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Wie schnell erhalte ich eine Antwort auf meine Anfrage?",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Wir melden uns innerhalb weniger Tage. Am schnellsten geht es über das Kontaktformular mit ein paar Angaben zu Standort, Größenordnung und geplantem Zeitrahmen."
-     }
-    }
-   ]
-  }
- ]
+  ]
 }
 </script>
 </head>
 <body>
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
 
-<header class="nav nav--split">
-  <div class="wrap nav__bar">
-    <a class="skip-link" href="#top">Zum Inhalt</a>
-    <a class="nav__logo" href="./" aria-label="Sinke Planung, Startseite"><svg class="logo-mark" viewBox="0 0 32 32" width="24" height="24" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="4" fill="#1b1a17"/><rect x="7" y="17" width="4" height="9" fill="#f2efe8"/><rect x="14" y="12" width="4" height="14" fill="#f2efe8"/><rect x="21" y="7" width="4" height="19" fill="#f2efe8"/><rect x="6" y="26" width="20" height="2" fill="#a24e34"/></svg>Sinke Planung</a>
-    <nav class="nav__links" aria-label="Hauptnavigation">
-      <div class="nav__item">
-        <a class="nav__link" href="leistungen.html" aria-current="page">Leistungen <svg class="chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-        <div class="nav__menu">
-          <div class="wrap grid">
-            <a class="menu-card span-3" href="leistungen.html#umbau-sanierung">
-              <div class="panel"><img class="frame__img" src="assets/img/projekte/mehringdamm-kueche.webp" width="469" height="349" loading="lazy" decoding="async" alt="Neue Küche in einer sanierten Altbauwohnung"></div>
-              <span class="t-card">Umbau &amp; Sanierung</span>
-              <span class="t-small muted">Wohnung und Haus im Bestand</span>
-            </a>
-            <a class="menu-card span-3" href="leistungen.html#anbau-aufstockung">
-              <div class="panel"><img class="frame__img" src="assets/img/projekte/glockenweiss-hof.webp" width="466" height="325" loading="lazy" decoding="async" alt="Wohnhäuser mit Staffelgeschoss an einem Wohnhof"></div>
-              <span class="t-card">Anbau &amp; Aufstockung</span>
-              <span class="t-small muted">Mehr Wohnraum am Haus</span>
-            </a>
-            <a class="menu-card span-3" href="leistungen.html#innenausbau-umnutzung">
-              <div class="panel"><img class="frame__img" src="assets/img/projekte/cordee-des-alpes-lounge-kamin.webp" width="580" height="436" loading="lazy" decoding="async" alt="Lounge mit Kamin"></div>
-              <span class="t-card">Innenausbau &amp; Umnutzung</span>
-              <span class="t-small muted">Grundriss und Raumkonzept</span>
-            </a>
-            <a class="menu-card span-3" href="leistungen.html#neubau">
-              <div class="panel"><img class="frame__img" src="assets/img/projekte/saarbruecker-strasse-fassade-detail.webp" width="558" height="502" loading="lazy" decoding="async" alt="Klinkerfassade mit abgerundeten Balkonen an einem neuen Wohnhaus"></div>
-              <span class="t-card">Neubau</span>
-              <span class="t-small muted">Vom Haus bis zum Mehrfamilienhaus</span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="nav__item"><a class="nav__link" href="projekte.html">Projekte</a></div>
-      <div class="nav__item"><a class="nav__link" href="wettbewerbe.html">Wettbewerbe</a></div>
-      <div class="nav__item"><a class="nav__link" href="buero.html">Büro</a></div>
-      <div class="nav__item"><a class="nav__link" href="journal.html">Journal</a></div>
-    </nav>
-    <div class="nav__actions">
-      <a class="btn btn--primary" href="kontakt.html">Projekt anfragen</a>
-    </div>
-    <button class="nav__toggle" type="button" aria-expanded="false" aria-label="Menü">
-      <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M2 5h14M2 13h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-    </button>
-  </div>
+<header class="sidebar">
+  <a class="logo" href="./" aria-label="Sinke Planung, Startseite"><svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" fill="#1f1f1f"/><rect x="7" y="17" width="4" height="9" fill="#ffffff"/><rect x="14" y="12" width="4" height="14" fill="#ffffff"/><rect x="21" y="7" width="4" height="19" fill="#ffffff"/><rect x="6" y="26" width="20" height="2" fill="#ffffff"/></svg><span class="logo__name">Sinke Planung</span></a>
+  <p class="sidebar__label" aria-hidden="true"><span>/</span>Leistungen</p>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menü öffnen"><span></span><span></span><span></span></button>
 </header>
+<a class="corner-cta" href="kontakt.html">Projekt anfragen</a>
 
-<main id="top" class="flow">
-  <section class="pagehead" data-enter aria-labelledby="page-h">
-    <div class="wrap">
-      <nav class="crumbs" aria-label="Brotkrümelnavigation"><a href="./">Startseite</a> <span aria-hidden="true">/</span> <span aria-current="page">Leistungen</span></nav>
-      <h1 id="page-h">Planungsleistungen für Umbau, Anbau und Neubau in Berlin</h1>
-      <p class="t-lead measure">Architektonische Planung für private und gewerbliche Bauvorhaben: vom Entwurf über die Grundrissplanung bis zur Begleitung auf der Baustelle, mit einem festen Ansprechpartner.</p>
+<nav class="menu" id="menu" aria-label="Hauptnavigation">
+  <div class="menu__inner">
+    <ol class="menu__list">
+      <li><a href="leistungen.html" aria-current="page"><span class="n">01</span>Leistungen</a></li>
+      <li><a href="projekte.html"><span class="n">02</span>Projekte</a></li>
+      <li><a href="wettbewerbe.html"><span class="n">03</span>Wettbewerbe</a></li>
+      <li><a href="buero.html"><span class="n">04</span>Büro</a></li>
+      <li><a href="journal.html"><span class="n">05</span>Journal</a></li>
+      <li><a href="kontakt.html"><span class="n">06</span>Kontakt</a></li>
+      <li><a href="partner.html"><span class="n">07</span>Partner</a></li>
+    </ol>
+    <div class="menu__side">
+      <p class="menu__h">Planung im Bezirk</p>
+      <ul><li><a href="planung-prenzlauer-berg.html">Prenzlauer Berg</a></li><li><a href="planung-charlottenburg.html">Charlottenburg</a></li><li><a href="planung-zehlendorf.html">Zehlendorf</a></li><li><a href="planung-mitte.html">Mitte</a></li></ul>
+      <p class="menu__h">Ratgeber</p>
+      <ul><li><a href="leistungsphasen-hoai.html">Leistungsphasen der HOAI</a></li><li><a href="journal-altbausanierung-berlin.html">Altbausanierung in Berlin</a></li></ul>
+      <a class="btn btn--light" href="kontakt.html">Projekt anfragen <span class="arrow" aria-hidden="true">→</span></a>
     </div>
-  </section>
+  </div>
+</nav>
 
-  <section class="sec" id="umbau-sanierung" aria-labelledby="umbau-sanierung-h">
-    <div class="wrap">
-      <div class="grid grid--top">
-        <div class="span-5 stack-4">
-          <h2 id="umbau-sanierung-h">Umbau &amp; Sanierung</h2>
-          <p>Sie möchten Ihre Wohnung oder Ihr Haus im Bestand umbauen, modernisieren oder energetisch fit für die Zukunft machen? Wir planen den Umbau vom Aufmaß bis zum fertigen Entwurf – mit Blick darauf, was die vorhandene Substanz hergibt und was wirtschaftlich sinnvoll ist.</p>
-          <p>Von der energetischen Modernisierung über neue Grundrisse bis zur behutsamen Aufwertung: Wir entwickeln eine Planung, die zu Ihrem Vorhaben und Ihrem Budget passt – Schritt für Schritt, auch im bewohnten Zustand.</p>
-          <p class="muted">Altbausanierung, Energetische Modernisierung, Umbauplanung, Bauen im Bestand, Aufmaß &amp; Entwurf</p>
-        </div>
-        <div class="frame frame--photo span-7 start-6 ratio-43"><img class="frame__img" src="assets/img/projekte/mehringdamm-fluegeltuer.webp" width="591" height="409" loading="lazy" decoding="async" alt="Aufgearbeitete Flügeltür und Parkett in einer sanierten Altbauwohnung am Mehringdamm"></div>
+<nav class="wrap crumbs" aria-label="Brotkrümelnavigation">
+  <a href="./">Startseite</a> <span>/</span> Leistungen
+</nav>
+
+<main id="main">
+
+  <section class="hero wrap" style="padding-top:clamp(1.5rem,4vw,3rem)">
+    <div class="hero__grid" data-enter>
+      <div>
+        <p class="eyebrow">Leistungen</p>
+        <h1 class="hero__title hero__title--long mt-2">Planungsleistungen für Umbau, Anbau und Neubau <span class="thin">in&nbsp;Berlin.</span></h1>
+      </div>
+      <div>
+        <p class="lead">Architektonische Planung für private und gewerbliche Bauvorhaben: vom Entwurf über die Grundrissplanung bis zur Begleitung auf der Baustelle, mit einem festen Ansprechpartner.</p>
       </div>
     </div>
   </section>
 
-  <section class="sec" id="anbau-aufstockung" aria-labelledby="anbau-aufstockung-h">
-    <div class="wrap">
-      <div class="grid grid--top">
-        <div class="span-5 stack-4">
-          <h2 id="anbau-aufstockung-h">Anbau, Aufstockung &amp; Dachausbau</h2>
-          <p>Mehr Platz, ohne neu zu bauen: Anbau, Aufstockung und Dachausbau schaffen zusätzlichen Wohnraum dort, wo Sie schon leben. Wir prüfen, was baulich und planungsrechtlich möglich ist, und übersetzen das in einen tragfähigen Entwurf.</p>
-          <p>Ob ausgebautes Dachgeschoss, aufgesetztes Staffelgeschoss oder ein Anbau im Garten – wir planen den Zugewinn so, dass er sich selbstverständlich in das bestehende Gebäude einfügt.</p>
-          <p class="muted">Anbau, Aufstockung, Dachausbau, Staffelgeschoss, Machbarkeitsprüfung</p>
+  <!-- UMBAU & SANIERUNG -->
+  <section class="section wrap" id="umbau-sanierung">
+    <div class="grid grid-2">
+      <div>
+        <h2 class="h-xl balance">Umbau &amp; Sanierung</h2>
+        <figure class="proj-cover" style="margin-top:1.8rem">
+          <img src="assets/img/projekte/mehringdamm-fluegeltuer.webp" width="591" height="409" loading="lazy" decoding="async" alt="Aufgearbeitete Flügeltür und Parkett in einer sanierten Altbauwohnung am Mehringdamm">
+        </figure>
+      </div>
+      <div class="prose flow">
+        <p>Sie möchten Ihre Wohnung oder Ihr Haus im Bestand umbauen, modernisieren oder energetisch fit für die Zukunft machen? Wir planen den Umbau vom Aufmaß bis zum fertigen Entwurf – mit Blick darauf, was die vorhandene Substanz hergibt und was wirtschaftlich sinnvoll ist.</p>
+        <p>Von der energetischen Modernisierung über neue Grundrisse bis zur behutsamen Aufwertung: Wir entwickeln eine Planung, die zu Ihrem Vorhaben und Ihrem Budget passt – Schritt für Schritt, auch im bewohnten Zustand.</p>
+        <div class="leistung__tags">
+          <span class="tag">Altbausanierung</span>
+          <span class="tag">Energetische Modernisierung</span>
+          <span class="tag">Umbauplanung</span>
+          <span class="tag">Bauen im Bestand</span>
+          <span class="tag">Aufmaß &amp; Entwurf</span>
         </div>
-        <div class="frame frame--photo span-7 start-6 ratio-43"><img class="frame__img" src="assets/img/projekte/marienfelde-strassenfassade.webp" width="607" height="523" loading="lazy" decoding="async" alt="Wohnhaus mit gefalteter Metallfassade zwischen Berliner Altbauten, Projekt Marienfelde"></div>
       </div>
     </div>
   </section>
 
-  <section class="sec" id="innenausbau-umnutzung" aria-labelledby="innenausbau-umnutzung-h">
-    <div class="wrap">
-      <div class="grid grid--top">
-        <div class="span-5 stack-4">
-          <h2 id="innenausbau-umnutzung-h">Innenausbau &amp; Umnutzung</h2>
-          <p>Ein neuer Grundriss, ein durchdachtes Raumkonzept, eine andere Nutzung: Beim Innenausbau planen wir Räume so, dass sie zu Ihrem Alltag passen – von der Wohnung bis zur Gewerbe- oder Praxisfläche.</p>
-          <p>Wir begleiten die Umnutzung bestehender Flächen, entwickeln Grundriss und Raumaufteilung und stimmen Material, Licht und Details aufeinander ab.</p>
-          <p class="muted">Innenausbau, Grundrissplanung, Raumkonzept, Umnutzung, Praxis- &amp; Gewerbeflächen</p>
+  <hr class="hairline wrap" style="max-width:var(--maxw)">
+
+  <!-- ANBAU, AUFSTOCKUNG & DACHAUSBAU -->
+  <section class="section wrap" id="anbau-aufstockung">
+    <div class="grid grid-2">
+      <div class="prose flow" style="order:2">
+        <p>Mehr Platz, ohne neu zu bauen: Anbau, Aufstockung und Dachausbau schaffen zusätzlichen Wohnraum dort, wo Sie schon leben. Wir prüfen, was baulich und planungsrechtlich möglich ist, und übersetzen das in einen tragfähigen Entwurf.</p>
+        <p>Ob ausgebautes Dachgeschoss, aufgesetztes Staffelgeschoss oder ein Anbau im Garten – wir planen den Zugewinn so, dass er sich selbstverständlich in das bestehende Gebäude einfügt.</p>
+        <div class="leistung__tags">
+          <span class="tag">Anbau</span>
+          <span class="tag">Aufstockung</span>
+          <span class="tag">Dachausbau</span>
+          <span class="tag">Staffelgeschoss</span>
+          <span class="tag">Machbarkeitsprüfung</span>
         </div>
-        <div class="frame frame--photo span-7 start-6 ratio-43"><img class="frame__img" src="assets/img/projekte/cordee-des-alpes-lounge-kamin.webp" width="580" height="436" loading="lazy" decoding="async" alt="Lounge mit Kamin, Innenausbau im Projekt Cordée des Alpes"></div>
+      </div>
+      <div style="order:1">
+        <h2 class="h-xl balance">Anbau, Aufstockung &amp; Dachausbau</h2>
+        <figure class="proj-cover" style="margin-top:1.8rem">
+          <img src="assets/img/projekte/marienfelde-strassenfassade.webp" width="607" height="523" loading="lazy" decoding="async" alt="Wohnhaus mit gefalteter Metallfassade zwischen Berliner Altbauten, Projekt Marienfelde">
+        </figure>
       </div>
     </div>
   </section>
 
-  <section class="sec" id="neubau" aria-labelledby="neubau-h">
-    <div class="wrap">
-      <div class="grid grid--top">
-        <div class="span-5 stack-4">
-          <h2 id="neubau-h">Neubau</h2>
-          <p>Sie planen ein eigenes Haus? Wir entwerfen und planen Neubauten – vom Einfamilienhaus über das Doppelhaus bis zum Mehrfamilienhaus. Von der ersten Skizze über den Entwurf bis zur ausführungsreifen Planung bleiben wir Ihr fester Ansprechpartner.</p>
-          <p>Uns geht es um Architektur mit Substanz: klare Grundrisse, gutes Tageslicht, dauerhafte Materialien und eine Planung, die zu Grundstück, Nachbarschaft und Budget passt.</p>
-          <p class="muted">Neubau, Einfamilienhaus, Doppelhaus, Mehrfamilienhaus</p>
+  <hr class="hairline wrap" style="max-width:var(--maxw)">
+
+  <!-- INNENAUSBAU & UMNUTZUNG -->
+  <section class="section wrap" id="innenausbau-umnutzung">
+    <div class="grid grid-2">
+      <div>
+        <h2 class="h-xl balance">Innenausbau &amp; Umnutzung</h2>
+        <figure class="proj-cover" style="margin-top:1.8rem">
+          <img src="assets/img/projekte/cordee-des-alpes-spa.webp" width="580" height="519" loading="lazy" decoding="async" alt="Spa-Bereich mit Kamin, Innenausbau im Projekt Cordée des Alpes in Verbier">
+        </figure>
+      </div>
+      <div class="prose flow">
+        <p>Ein neuer Grundriss, ein durchdachtes Raumkonzept, eine andere Nutzung: Beim Innenausbau planen wir Räume so, dass sie zu Ihrem Alltag passen – von der Wohnung bis zur Gewerbe- oder Praxisfläche.</p>
+        <p>Wir begleiten die Umnutzung bestehender Flächen, entwickeln Grundriss und Raumaufteilung und stimmen Material, Licht und Details aufeinander ab.</p>
+        <div class="leistung__tags">
+          <span class="tag">Innenausbau</span>
+          <span class="tag">Grundrissplanung</span>
+          <span class="tag">Raumkonzept</span>
+          <span class="tag">Umnutzung</span>
+          <span class="tag">Praxis- &amp; Gewerbeflächen</span>
         </div>
-        <div class="frame frame--photo span-7 start-6 ratio-43"><img class="frame__img" src="assets/img/projekte/glockenweiss-stadtvilla.webp" width="646" height="412" loading="lazy" decoding="async" alt="Neu gebaute Stadtvilla mit Loggien und Dachterrasse, Wohnanlage Glockenweiß"></div>
       </div>
     </div>
   </section>
 
-  <section class="sec ground-inverse" id="ablauf" aria-labelledby="ablauf-h">
-    <div class="wrap">
-      <div class="grid grid--top">
-        <div class="span-5 stack-4">
-          <h2 id="ablauf-h">Ein Projekt in fünf Schritten</h2>
-          <p>Von der ersten Idee bis auf die Baustelle begleiten wir Ihr Projekt mit einem festen Ansprechpartner. Die Schritte folgen den Leistungsphasen der HOAI.</p>
-          <p><a class="link" href="leistungsphasen-hoai.html">Leistungsphasen 1 bis 9 ansehen</a></p>
+  <hr class="hairline wrap" style="max-width:var(--maxw)">
+
+  <!-- NEUBAU -->
+  <section class="section wrap" id="neubau">
+    <div class="grid grid-2">
+      <div class="prose flow" style="order:2">
+        <p>Sie planen ein eigenes Haus? Wir entwerfen und planen Neubauten – vom Einfamilienhaus über das Doppelhaus bis zum Mehrfamilienhaus. Von der ersten Skizze über den Entwurf bis zur ausführungsreifen Planung bleiben wir Ihr fester Ansprechpartner.</p>
+        <p>Uns geht es um Architektur mit Substanz: klare Grundrisse, gutes Tageslicht, dauerhafte Materialien und eine Planung, die zu Grundstück, Nachbarschaft und Budget passt.</p>
+        <div class="leistung__tags">
+          <span class="tag">Neubau</span>
+          <span class="tag">Einfamilienhaus</span>
+          <span class="tag">Doppelhaus</span>
+          <span class="tag">Mehrfamilienhaus</span>
         </div>
-        <ol class="rows span-6 start-7">
-          <li><span class="rows__name">1. Erstgespräch &amp; Idee</span><p>Wir hören zu, klären Ihr Vorhaben, sehen uns Ort und Bestand an und ordnen ein, was möglich ist.</p><span class="rows__value">Leistungsphase 1</span></li>
-          <li><span class="rows__name">2. Entwurf &amp; Grundriss</span><p>Aus Ihren Wünschen entwickeln wir einen Entwurf mit tragfähigem Grundriss und ersten Kostengrößen.</p><span class="rows__value">Leistungsphasen 2 und 3</span></li>
-          <li><span class="rows__name">3. Genehmigungsplanung</span><p>Die Unterlagen für den Bauantrag erstellen wir gemeinsam mit bauvorlageberechtigten Partner:innen aus unserem Netzwerk und stimmen die notwendigen Nachweise ab.</p><span class="rows__value">Leistungsphase 4</span></li>
-          <li><span class="rows__name">4. Ausführungsplanung</span><p>Details, Maße und Materialien werden bis zur ausführungsreifen Planung durchgearbeitet.</p><span class="rows__value">Leistungsphase 5</span></li>
-          <li><span class="rows__name">5. Begleitung der Umsetzung</span><p>Wir begleiten die Umsetzung auf der Baustelle, behalten Qualität und Termine im Blick und bleiben Ihr Ansprechpartner.</p><span class="rows__value">Baustelle</span></li>
-        </ol>
+      </div>
+      <div style="order:1">
+        <h2 class="h-xl balance">Neubau</h2>
+        <figure class="proj-cover" style="margin-top:1.8rem">
+          <img src="assets/img/projekte/glockenweiss-stadtvilla.webp" width="646" height="412" loading="lazy" decoding="async" alt="Neu gebaute Stadtvilla mit Loggien und Dachterrasse, Wohnanlage Glockenweiß">
+        </figure>
       </div>
     </div>
   </section>
 
-  <section class="sec" id="fragen" aria-labelledby="fragen-h">
-    <div class="wrap">
-      <div class="grid grid--top">
-        <div class="span-5 stack-4">
-          <h2 id="fragen-h">Fragen zu Leistungen und Ablauf</h2>
-          <p class="muted">Neun Antworten zu Verfahren, Leistungsphasen und Zusammenarbeit.</p>
-          <p><a class="link" href="kontakt.html">Eigene Frage stellen</a></p>
-        </div>
-        <div class="faq span-6 start-7">
-          <div class="faq__item"><h3>Was ist der Unterschied zwischen Anbau, Aufstockung und Dachausbau?</h3><p>Ein Anbau erweitert das Gebäude in der Fläche, zum Beispiel zum Garten hin. Eine Aufstockung setzt ein zusätzliches Geschoss auf das bestehende Haus. Beim Dachausbau wird ein vorhandener Dachraum zu Wohnraum, meist innerhalb der bestehenden Dachform. Welche Lösung passt, hängt von Grundstück, Statik und Baurecht ab.</p></div>
-          <div class="faq__item"><h3>Brauche ich für einen Umbau in Berlin eine Baugenehmigung?</h3><p>Das hängt vom Vorhaben ab. Änderungen im Inneren ohne Eingriff in tragende Bauteile sind oft ohne Verfahren möglich. Anbauten, Aufstockungen, Eingriffe in die Statik, Nutzungsänderungen und Änderungen an der Fassade sind in der Regel bei der Bauaufsicht des Bezirks zu beantragen oder anzuzeigen. Die Bauordnung für Berlin wurde 2024 und 2026 mehrfach geändert. Wir klären deshalb zu Beginn, welches Verfahren für Ihr Vorhaben gilt.</p></div>
-          <div class="faq__item"><h3>Was sind die Leistungsphasen der HOAI?</h3><p>Die Honorarordnung für Architekten und Ingenieure (HOAI) gliedert die Planung eines Gebäudes in neun Leistungsphasen: 1 Grundlagenermittlung, 2 Vorplanung, 3 Entwurfsplanung, 4 Genehmigungsplanung, 5 Ausführungsplanung, 6 Vorbereitung der Vergabe, 7 Mitwirkung bei der Vergabe, 8 Objektüberwachung (Bauüberwachung) und 9 Objektbetreuung. Die Phasen lassen sich einzeln oder im Paket beauftragen.</p></div>
-          <div class="faq__item"><h3>Kann ich während der Sanierung in meiner Wohnung bleiben?</h3><p>Häufig ja. Wir planen Umbau und Sanierung Schritt für Schritt, auch im bewohnten Zustand. Ob das sinnvoll ist, hängt vom Umfang der Arbeiten ab, etwa bei Bädern, Leitungen oder Eingriffen in die Decken.</p></div>
-          <div class="faq__item"><h3>Planen Sie auch Gewerbe- und Praxisflächen?</h3><p>Ja. Beim Innenausbau und bei Umnutzungen planen wir neben Wohnungen auch Büro-, Gewerbe- und Praxisflächen, einschließlich Grundriss, Raumaufteilung, Material und Licht.</p></div>
-          <div class="faq__item"><h3>Für wen plant Sinke Planung?</h3><p>Für private und gewerbliche Bauherr:innen in Berlin: Eigentümer:innen von Wohnungen und Häusern, Familien, die mehr Platz brauchen, sowie Betriebe und Praxen, die Flächen umbauen oder umnutzen möchten.</p></div>
-          <div class="faq__item"><h3>Wie läuft ein Projekt mit Sinke Planung ab?</h3><p>In fünf Schritten: Erstgespräch und Besichtigung, Entwurf und Grundriss mit ersten Kostengrößen, Genehmigungsplanung, Ausführungsplanung und Begleitung der Umsetzung auf der Baustelle. Den <a href="leistungen.html#ablauf">Ablauf im Einzelnen</a> finden Sie bei den Leistungen.</p></div>
-          <div class="faq__item"><h3>Welche Erfahrung bringen Sie mit?</h3><p>Über 20 Jahre in Architektur und Planung. In leitender Rolle haben wir in unserer bisherigen Tätigkeit über 2.000 Wohneinheiten sowie Schulen und Gewerbebauten in Berlin verantwortet. Diese Erfahrung bringen wir heute persönlich in Ihr Vorhaben ein.</p></div>
-          <div class="faq__item"><h3>Wie schnell erhalte ich eine Antwort auf meine Anfrage?</h3><p>Wir melden uns innerhalb weniger Tage. Am schnellsten geht es über das <a href="kontakt.html">Kontaktformular</a> mit ein paar Angaben zu Standort, Größenordnung und geplantem Zeitrahmen.</p></div>
-        </div>
-      </div>
+  <!-- ERFAHRUNG -->
+  <section class="section wrap" id="erfahrung">
+    <div class="sec-head">
+      <h2 class="h-xl balance">Große Erfahrung, persönlich für Ihr Vorhaben.</h2>
+      <p class="prose">Wir bringen Erfahrung aus über 2.000 in leitender Rolle verantworteten Wohneinheiten sowie Schul- und Gewerbebauten mit – jetzt persönlich für Ihr Vorhaben. Diese Erfahrung fließt heute in jeden Entwurf, jede Grundrissplanung und jede Baubegleitung ein.</p>
     </div>
   </section>
+
+  <!-- SO ARBEITEN WIR -->
+  <section class="section wrap band" id="ablauf">
+    <div class="sec-head">
+      <p class="eyebrow">Ablauf</p>
+      <h2 class="h-xl balance">So arbeiten wir.</h2>
+      <p class="prose">Von der ersten Idee bis auf die Baustelle begleiten wir Ihr Projekt in klaren Schritten – mit einem festen Ansprechpartner und nachvollziehbaren Entscheidungen. Die Schritte folgen den <a class="link-underline" href="leistungsphasen-hoai.html">Leistungsphasen der HOAI</a>.</p>
+    </div>
+    <div class="leistungen">
+      <article class="leistung"><div class="leistung__idx">01</div><h3 class="h-md">Erstgespräch &amp; Idee</h3><p class="leistung__body">Wir hören zu, klären Ihr Vorhaben, sehen uns Ort und Bestand an und ordnen ein, was möglich ist.</p></article>
+      <article class="leistung"><div class="leistung__idx">02</div><h3 class="h-md">Entwurf &amp; Grundriss</h3><p class="leistung__body">Aus Ihren Wünschen entwickeln wir einen Entwurf mit tragfähigem Grundriss und ersten Kostengrößen.</p></article>
+      <article class="leistung"><div class="leistung__idx">03</div><h3 class="h-md">Genehmigungsplanung</h3><p class="leistung__body">Die Unterlagen für den Bauantrag erstellen wir gemeinsam mit bauvorlageberechtigten Partner:innen aus unserem Netzwerk und stimmen die notwendigen Nachweise ab.</p></article>
+      <article class="leistung"><div class="leistung__idx">04</div><h3 class="h-md">Ausführungsplanung</h3><p class="leistung__body">Details, Maße und Materialien werden bis zur ausführungsreifen Planung durchgearbeitet.</p></article>
+      <article class="leistung"><div class="leistung__idx">05</div><h3 class="h-md">Begleitung der Umsetzung</h3><p class="leistung__body">Wir begleiten die Umsetzung auf der Baustelle, behalten Qualität und Termine im Blick und bleiben Ihr Ansprechpartner.</p></article>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section wrap" id="fragen">
+    <div class="sec-head">
+      <h2 class="h-xl balance">Fragen zu unseren Leistungen</h2>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>Was ist der Unterschied zwischen Anbau, Aufstockung und Dachausbau?<span class="plus" aria-hidden="true"></span></summary>
+        <p>Ein Anbau erweitert das Gebäude in der Fläche, zum Beispiel zum Garten hin. Eine Aufstockung setzt ein zusätzliches Geschoss auf das bestehende Haus. Beim Dachausbau wird ein vorhandener Dachraum zu Wohnraum, meist innerhalb der bestehenden Dachform. Welche Lösung passt, hängt von Grundstück, Statik und Baurecht ab.</p>
+      </details>
+      <details>
+        <summary>Brauche ich für einen Umbau in Berlin eine Baugenehmigung?<span class="plus" aria-hidden="true"></span></summary>
+        <p>Das hängt vom Vorhaben ab. Änderungen im Inneren ohne Eingriff in tragende Bauteile sind oft ohne Verfahren möglich. Anbauten, Aufstockungen, Eingriffe in die Statik, Nutzungsänderungen und Änderungen an der Fassade sind in der Regel bei der Bauaufsicht des Bezirks zu beantragen oder anzuzeigen. Die Bauordnung für Berlin wurde 2024 und 2026 mehrfach geändert. Wir klären deshalb zu Beginn, welches Verfahren für Ihr Vorhaben gilt.</p>
+      </details>
+      <details>
+        <summary>Was sind die Leistungsphasen der HOAI?<span class="plus" aria-hidden="true"></span></summary>
+        <p>Die Honorarordnung für Architekten und Ingenieure (HOAI) gliedert die Planung eines Gebäudes in neun Leistungsphasen: 1 Grundlagenermittlung, 2 Vorplanung, 3 Entwurfsplanung, 4 Genehmigungsplanung, 5 Ausführungsplanung, 6 Vorbereitung der Vergabe, 7 Mitwirkung bei der Vergabe, 8 Objektüberwachung (Bauüberwachung) und 9 Objektbetreuung. Die Phasen lassen sich einzeln oder im Paket beauftragen.</p>
+      </details>
+      <details>
+        <summary>Kann ich während der Sanierung in meiner Wohnung bleiben?<span class="plus" aria-hidden="true"></span></summary>
+        <p>Häufig ja. Wir planen Umbau und Sanierung Schritt für Schritt, auch im bewohnten Zustand. Ob das sinnvoll ist, hängt vom Umfang der Arbeiten ab, etwa bei Bädern, Leitungen oder Eingriffen in die Decken.</p>
+      </details>
+      <details>
+        <summary>Planen Sie auch Gewerbe- und Praxisflächen?<span class="plus" aria-hidden="true"></span></summary>
+        <p>Ja. Beim Innenausbau und bei Umnutzungen planen wir neben Wohnungen auch Büro-, Gewerbe- und Praxisflächen, einschließlich Grundriss, Raumaufteilung, Material und Licht.</p>
+      </details>
+    </div>
+  </section>
+
 </main>
 
-<footer class="footer closing" id="contact" aria-labelledby="close-h">
+<!-- CTA -->
+<section class="cta">
   <div class="wrap">
-    <div class="closing__cta close--type">
-      <div class="section-head">
-        <h2 id="close-h">Ihr Bauvorhaben in Berlin planen</h2>
-        <p>Erreichbar Montag bis Freitag, 9 bis 18 Uhr.</p>
-      </div>
-      <a class="btn btn--primary btn--xl btn--wide" href="kontakt.html">Projekt anfragen<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
-    </div>
-    <div class="closing__links">
-      <div class="grid">
-        <div class="span-4 stack-4">
-          <a class="nav__logo" href="./" aria-label="Sinke Planung, Startseite"><svg class="logo-mark" viewBox="0 0 32 32" width="24" height="24" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="4" fill="#1b1a17"/><rect x="7" y="17" width="4" height="9" fill="#f2efe8"/><rect x="14" y="12" width="4" height="14" fill="#f2efe8"/><rect x="21" y="7" width="4" height="19" fill="#f2efe8"/><rect x="6" y="26" width="20" height="2" fill="#a24e34"/></svg>Sinke Planung</a>
-          <p class="footer__lede">Planungsbüro für Umbau, Sanierung, Anbau und Neubau in Berlin.</p>
+    <div class="grid grid-2" style="align-items:end">
+      <h2>Planung für Ihr Vorhaben</h2>
+      <div>
+        <p>Beschreiben Sie uns Ihr Vorhaben. Wir sagen Ihnen, welche Leistungen dafür sinnvoll sind, und melden uns innerhalb weniger Tage.</p>
+        <div class="cluster mt-3">
+          <a class="btn btn--light" href="kontakt.html">Projekt anfragen <span class="arrow" aria-hidden="true">→</span></a>
         </div>
-        <div class="span-2 footer__col"><h3>Leistungen</h3><ul><li><a href="leistungen.html#umbau-sanierung">Umbau &amp; Sanierung</a></li><li><a href="leistungen.html#anbau-aufstockung">Anbau &amp; Aufstockung</a></li><li><a href="leistungen.html#innenausbau-umnutzung">Innenausbau</a></li><li><a href="leistungen.html#neubau">Neubau</a></li><li><a href="leistungsphasen-hoai.html">Leistungsphasen</a></li></ul></div>
-        <div class="span-2 footer__col"><h3>Bezirke</h3><ul><li><a href="planung-prenzlauer-berg.html">Prenzlauer Berg</a></li><li><a href="planung-charlottenburg.html">Charlottenburg</a></li><li><a href="planung-zehlendorf.html">Zehlendorf</a></li><li><a href="planung-mitte.html">Mitte</a></li></ul></div>
-        <div class="span-2 footer__col"><h3>Büro</h3><ul><li><a href="buero.html">Über das Büro</a></li><li><a href="projekte.html">Projekte</a></li><li><a href="wettbewerbe.html">Wettbewerbe</a></li><li><a href="partner.html">Partner</a></li><li><a href="kontakt.html">Kontakt</a></li></ul></div>
-        <div class="span-2 footer__col"><h3>Journal</h3><ul><li><a href="journal-altbausanierung-berlin.html">Altbausanierung in Berlin</a></li><li><a href="journal-anbau-aufstockung-baugenehmigung.html">Anbau und Baugenehmigung</a></li><li><a href="journal-grundriss-optimieren.html">Grundriss ändern</a></li><li><a href="journal-energetische-sanierung-reihenfolge.html">Energetische Sanierung</a></li><li><a href="journal-aufstockung-statt-abriss.html">Aufstockung statt Abriss</a></li></ul></div>
       </div>
-      <div class="footer__legal">
-        <span>&copy; 2026 Sinke Planung &nbsp; <a href="datenschutz.html">Datenschutz</a> &nbsp; <a href="impressum.html">Impressum</a></span>
-        <div class="socials"></div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="footer-word" aria-hidden="true">Sinke Planung</p>
+    <div class="footer-grid">
+      <div>
+        <p class="footer-lede">Planungsbüro für Architektur und Bauplanung in Berlin: Umbau, Sanierung, Anbau und Neubau.</p>
+        <!-- TODO: Anschrift, Telefon und E-Mail ergänzen, sobald sie feststehen (auch im JSON-LD) -->
+        <p class="footer-meta">Montag bis Freitag, 9 bis 18 Uhr<br><a href="kontakt.html">Kontaktformular</a></p>
       </div>
+      <div><p class="footer-h">Navigation</p><ul class="footer-nav"><li><a href="leistungen.html" aria-current="page">Leistungen</a></li><li><a href="projekte.html">Projekte</a></li><li><a href="wettbewerbe.html">Wettbewerbe</a></li><li><a href="buero.html">Büro</a></li><li><a href="journal.html">Journal</a></li><li><a href="kontakt.html">Kontakt</a></li><li><a href="partner.html">Partner</a></li></ul></div>
+      <div><p class="footer-h">Planung im Bezirk</p><ul class="footer-nav"><li><a href="planung-prenzlauer-berg.html">Prenzlauer Berg</a></li><li><a href="planung-charlottenburg.html">Charlottenburg</a></li><li><a href="planung-zehlendorf.html">Zehlendorf</a></li><li><a href="planung-mitte.html">Mitte</a></li></ul></div>
+      <div><p class="footer-h">Ratgeber</p><ul class="footer-nav"><li><a href="leistungsphasen-hoai.html">Leistungsphasen HOAI</a></li><li><a href="journal-anbau-aufstockung-baugenehmigung.html">Bauantrag für Anbau</a></li><li><a href="journal-grundriss-optimieren.html">Grundriss ändern</a></li></ul>
+        <p class="footer-h">Rechtliches</p><ul class="footer-nav"><li><a href="impressum.html">Impressum</a></li><li><a href="datenschutz.html">Datenschutz</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Sinke Planung</span>
+      <span>Berlin · Deutschland · Europa</span>
     </div>
   </div>
 </footer>
 
-<nav class="actionbar" aria-label="Schnellzugriff">
-  <a class="btn btn--primary" href="kontakt.html">Projekt anfragen</a>
-</nav>
-
-<script type="module" src="assets/system.js"></script>
-<script type="module" src="assets/motion/motion.js"></script>
-<script type="module" src="assets/layout/layout.js"></script>
+<script src="assets/js/main.js" defer></script>
 </body>
 </html>

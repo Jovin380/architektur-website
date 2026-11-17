@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-label="Platzhalter wettbewerb-3-1">
-  <defs><pattern id="p" width="28" height="28" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="28" height="28" fill="#e8e3d8"/><rect width="2" height="28" fill="#dcd6c8"/></pattern></defs>
-  <rect width="1600" height="1000" fill="url(#p)"/>
-  <rect x="470.0" y="410.0" width="660" height="180" rx="12" fill="#f2efe8" stroke="#a24e34" stroke-width="3"/>
-  <text x="800.0" y="488.0" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="44" fill="#1b1a17">Bild folgt: wettbewerb-3-1</text>
-  <text x="800.0" y="546.0" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="30" fill="#64625e">Visualisierung oder Hauptbild, quer</text>
+  <rect width="1600" height="1000" fill="#dcdcdc"/>
+  <path d="M0 1000 L1600 0 M0 0 L1600 1000" stroke="#cfcfcf" stroke-width="3"/>
+  <rect x="380.0" y="408.0" width="840" height="184" fill="#232323"/>
+  <text x="800.0" y="490.0" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="38" font-weight="700" letter-spacing="2" fill="#ffffff">BILD FOLGT: WETTBEWERB-3-1</text>
+  <text x="800.0" y="548.0" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="30" fill="#bdbdbd">Visualisierung oder Hauptbild</text>
 </svg>

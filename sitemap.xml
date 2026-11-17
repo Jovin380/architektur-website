@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Vorläufige Domain bonvico.com: bei einem Domainwechsel hier anpassen. lastmod bei inhaltlichen Änderungen aktualisieren. -->
+<!-- TODO: Domain an die echte Domain anpassen. lastmod bei inhaltlichen Änderungen aktualisieren. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://bonvico.com/</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://bonvico.com/leistungen.html</loc><lastmod>2026-11-16</lastmod></url>
-  <url><loc>https://bonvico.com/leistungsphasen-hoai.html</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://bonvico.com/projekte.html</loc><lastmod>2026-11-16</lastmod></url>
-  <url><loc>https://bonvico.com/planung-prenzlauer-berg.html</loc><lastmod>2026-11-16</lastmod></url>
-  <url><loc>https://bonvico.com/planung-charlottenburg.html</loc><lastmod>2026-11-16</lastmod></url>
-  <url><loc>https://bonvico.com/planung-zehlendorf.html</loc><lastmod>2026-11-16</lastmod></url>
-  <url><loc>https://bonvico.com/planung-mitte.html</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://bonvico.com/buero.html</loc><lastmod>2026-11-16</lastmod></url>
-  <url><loc>https://bonvico.com/partner.html</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://bonvico.com/journal.html</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://bonvico.com/journal-altbausanierung-berlin.html</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://bonvico.com/journal-anbau-aufstockung-baugenehmigung.html</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://bonvico.com/journal-grundriss-optimieren.html</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://bonvico.com/journal-energetische-sanierung-reihenfolge.html</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://bonvico.com/journal-aufstockung-statt-abriss.html</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://bonvico.com/leistungsphasen-hoai.html</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://bonvico.com/kontakt.html</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://bonvico.com/partner.html</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://bonvico.com/planung-prenzlauer-berg.html</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://bonvico.com/planung-charlottenburg.html</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://bonvico.com/planung-zehlendorf.html</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://bonvico.com/planung-mitte.html</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://bonvico.com/impressum.html</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://bonvico.com/datenschutz.html</loc><lastmod>2026-11-16</lastmod></url>
 </urlset>
