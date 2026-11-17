@@ -31,7 +31,7 @@
 <link rel="manifest" href="site.webmanifest">
 <link rel="alternate" type="application/rss+xml" title="Sinke Planung – Journal" href="feed.xml">
 <link rel="preload" href="assets/fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" as="image" type="image/webp" href="assets/img/projekte/spreedreieck-fassade.webp" fetchpriority="high">
+<link rel="preload" as="image" type="image/webp" href="assets/img/projekte/marienfelde-fassade-detail-hero.webp" fetchpriority="high">
 <link rel="stylesheet" href="assets/system.css">
 <link rel="stylesheet" href="assets/ui/cards.css">
 <link rel="stylesheet" href="assets/motion/motion.css">
@@ -41,7 +41,7 @@
 <script>document.documentElement.classList.add('mo-js');setTimeout(()=>document.documentElement.classList.add('mo-safe'),2500)</script>
 <link rel="modulepreload" href="assets/moments/moments.js">
 <link rel="modulepreload" href="assets/moments/lib.js">
-<link rel="modulepreload" href="assets/moments/word-highlight/moment.js">
+<link rel="modulepreload" href="assets/moments/photo-chapters/moment.js">
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -266,10 +266,10 @@
 </head>
 <body>
 <!-- type: service
-     deal: hero split, nav nav-split, close close-type (close-photo neu ausgelost: kein Foto in Seitenbreite), footer footer-columns
+     deal: hero photo (wie zuerst ausgelost; auf Wunsch des Büros große Bilder trotz geringer Auflösung), nav nav-split, close close-type (close-photo neu ausgelost: kein Foto in Seitenbreite), footer footer-columns
            (footer-visit neu ausgelost: keine Anschrift im Briefing), rhythm dark-band, buttons solid (tonal neu ausgelost: zu wenig Kontrast auf dieser Palette), mark: eigenes Zeichen des Büros
      palette: Farben des Büros (Kalkstein, Tusche, Ton); type: schibsted
-     moments: word-highlight in #erfahrung (photo-chapters neu ausgelost: kein Foto in Seitenbreite) -->
+     moments: photo-chapters in #projekte (word-highlight entfällt: sein Abschnitt blieb halb leer) -->
 <header class="nav nav--split">
   <div class="wrap nav__bar">
     <a class="skip-link" href="#top">Zum Inhalt</a>
@@ -290,12 +290,12 @@
               <span class="t-small muted">Mehr Wohnraum am Haus</span>
             </a>
             <a class="menu-card span-3" href="leistungen.html#innenausbau-umnutzung">
-              <div class="panel"><img class="frame__img" src="assets/img/projekte/corde-des-alps-lounge-kamin.webp" width="580" height="436" loading="lazy" decoding="async" alt="Lounge mit Kamin"></div>
+              <div class="panel"><img class="frame__img" src="assets/img/projekte/cordee-des-alpes-lounge-kamin.webp" width="580" height="436" loading="lazy" decoding="async" alt="Lounge mit Kamin"></div>
               <span class="t-card">Innenausbau &amp; Umnutzung</span>
               <span class="t-small muted">Grundriss und Raumkonzept</span>
             </a>
             <a class="menu-card span-3" href="leistungen.html#neubau">
-              <div class="panel"><img class="frame__img" src="assets/img/projekte/saarbruecker-strasse-innenhof.webp" width="538" height="385" loading="lazy" decoding="async" alt="Begrünter Innenhof einer neuen Wohnanlage"></div>
+              <div class="panel"><img class="frame__img" src="assets/img/projekte/saarbruecker-strasse-fassade-detail.webp" width="558" height="502" loading="lazy" decoding="async" alt="Klinkerfassade mit abgerundeten Balkonen an einem neuen Wohnhaus"></div>
               <span class="t-card">Neubau</span>
               <span class="t-small muted">Vom Haus bis zum Mehrfamilienhaus</span>
             </a>
@@ -316,15 +316,13 @@
 </header>
 
 <main id="top">
-  <section class="hero hero--split" data-enter aria-labelledby="hero-h">
-    <div class="wrap"><div class="hero-text grid hero__grid">
-      <div class="hero__text span-5">
+  <section class="hero hero--photo" data-enter data-calm="left" aria-labelledby="hero-h">
+    <img class="hero__bg" src="assets/img/projekte/marienfelde-fassade-detail-hero.webp" width="1398" height="1152" alt="Gefaltete Metallfassade eines Wohnhauses in Berlin, Referenzprojekt Marienfelde" style="--ly-pos: 62% 50%; --ly-pos-phone: 60% 50%" fetchpriority="high">
+    <div class="wrap"><div class="hero-text">
+      <div class="hero__text">
         <h1 id="hero-h">Architektur und Bauplanung in Berlin</h1>
-        <p class="hero__lead">Sinke Planung ist ein Planungsbüro für Umbau, Sanierung, Anbau und Neubau: vom ersten Entwurf bis zur Baustelle, mit über 20 Jahren Erfahrung und einem festen Ansprechpartner.</p>
+        <p class="hero__lead">Planungsbüro für Umbau, Sanierung, Anbau und Neubau: vom Entwurf bis zur Baustelle, mit über 20 Jahren Erfahrung.</p>
         <div class="btn-row"><a class="btn btn--primary" href="#anfrage">Projekt anfragen<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a><a class="btn btn--secondary" href="#leistungen">Leistungen ansehen</a></div>
-      </div>
-      <div class="hero__media span-6 start-7">
-        <img src="assets/img/projekte/spreedreieck-fassade.webp" width="643" height="865" decoding="async" alt="Geschwungene Glasfassade des Bürogebäudes Spreedreieck in Berlin, Referenz aus bisheriger Tätigkeit" fetchpriority="high" style="--ly-pos: 50% 40%">
       </div>
     </div></div>
   </section>
@@ -342,49 +340,46 @@
           </ul>
           <p><a class="link" href="leistungen.html">Alle Leistungen ansehen</a></p>
         </div>
-        <div class="frame frame--photo frame--fill span-6 start-7">
-            <img class="frame__img" src="assets/img/projekte/mehringdamm-wohnraum-stuck.webp" width="609" height="526" loading="lazy" decoding="async" alt="Sanierter Altbau-Wohnraum am Mehringdamm mit Stuck, Fischgrätparkett und Flügeltür" data-peek-for="umbau">
-            <img class="frame__img" src="assets/img/projekte/glockenweiss-stadtvillen-garten.webp" width="610" height="525" loading="lazy" decoding="async" alt="Wohnhäuser mit Staffelgeschoss und Dachterrassen, Projekt Glockenweiß" data-peek-for="anbau" hidden>
-            <img class="frame__img" src="assets/img/projekte/corde-des-alps-spa.webp" width="580" height="519" loading="lazy" decoding="async" alt="Spa-Bereich mit Kamin, Innenausbau im Projekt Corde des Alps" data-peek-for="innenausbau" hidden>
+        <div class="frame frame--photo frame--fill span-7 start-6">
+            <img class="frame__img" src="assets/img/projekte/mehringdamm-fluegeltuer.webp" width="591" height="409" loading="lazy" decoding="async" alt="Aufgearbeitete Flügeltür und Parkett in einer sanierten Altbauwohnung am Mehringdamm" data-peek-for="umbau">
+            <img class="frame__img" src="assets/img/projekte/marienfelde-strassenfassade.webp" width="607" height="523" loading="lazy" decoding="async" alt="Wohnhaus mit gefalteter Metallfassade zwischen Berliner Altbauten, Projekt Marienfelde" data-peek-for="anbau" hidden>
+            <img class="frame__img" src="assets/img/projekte/cordee-des-alpes-spa.webp" width="580" height="519" loading="lazy" decoding="async" alt="Spa-Bereich mit Kamin, Innenausbau im Projekt Cordée des Alpes in Verbier" data-peek-for="innenausbau" hidden>
             <img class="frame__img" src="assets/img/projekte/saarbruecker-strasse-strassenansicht.webp" width="535" height="496" loading="lazy" decoding="async" alt="Neubau eines Mehrfamilienhauses mit Klinkerfassade, Saarbrücker Straße in Berlin" data-peek-for="neubau" hidden>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section statement" id="erfahrung" data-moment="word-highlight" aria-label="Erfahrung">
-    <div class="wrap">
-      <p class="t-label">Erfahrung</p>
-      <p class="mo-wh__text">Über <strong>20 Jahre</strong> Erfahrung in Architektur und Planung: In leitender Rolle haben wir mehr als 2.000 Wohneinheiten sowie Schulen und Gewerbebauten verantwortet, in Berlin, in Deutschland und in Europa. Heute sprechen Sie direkt mit der Person, die plant.</p>
-      <div class="wall erfahrung__fotos">
-        <img src="assets/img/projekte/corde-des-alps-aussenansicht.webp" width="757" height="652" loading="lazy" decoding="async" alt="Holzfassaden des Projekts Corde des Alps im Schnee">
-        <img src="assets/img/projekte/spreedreieck-spree-abend.webp" width="609" height="523" loading="lazy" decoding="async" alt="Bürogebäude Spreedreieck an der Spree in Berlin am Abend">
-        <img src="assets/img/projekte/glockenweiss-stadtvilla.webp" width="646" height="412" loading="lazy" decoding="async" alt="Stadtvilla der Wohnanlage Glockenweiß mit Loggien und Dachterrasse">
-        <img src="assets/img/projekte/boothub-aussenansicht.webp" width="679" height="397" loading="lazy" decoding="async" alt="Außenansicht des Bürogebäudes BootHub mit vertikal gegliederter Fassade">
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="projekte" aria-labelledby="projekte-h">
-    <div class="wrap">
-      <div class="section-head"><h2 id="projekte-h">Referenzen in Berlin, Deutschland und Europa</h2><p>Wohnungsbau, Sanierung, Gewerbe und Innenausbau aus unserer bisherigen Tätigkeit, teils in leitender Rolle in vorherigen Büros verantwortet. <a class="link" href="projekte.html">Alle sieben Projekte ansehen</a></p></div>
-      <div class="grid">
-          <a class="tile span-4" href="projekte.html#marienfelde">
-            <div class="tile__media"><img src="assets/img/projekte/marienfelde-strassenfassade.webp" width="607" height="523" loading="lazy" decoding="async" alt="Straßenfassade des Wohnbauprojekts Marienfelde mit gefalteten Metallpaneelen"></div>
-            <div class="tile__head"><h3>Marienfelde</h3></div>
-            <p class="tile__facts">Wohnungsbau, Berlin</p>
-          </a>
-          <a class="tile span-4" href="projekte.html#mehringdamm">
-            <div class="tile__media"><img src="assets/img/projekte/mehringdamm-fluegeltuer.webp" width="591" height="409" loading="lazy" decoding="async" alt="Aufgearbeitete Flügeltür und Parkett in der Altbauwohnung am Mehringdamm"></div>
-            <div class="tile__head"><h3>Wohnungssanierung Mehringdamm</h3></div>
-            <p class="tile__facts">Sanierung, Berlin</p>
-          </a>
-          <a class="tile span-4" href="projekte.html#saarbruecker-strasse">
-            <div class="tile__media"><img src="assets/img/projekte/saarbruecker-strasse-innenhof.webp" width="538" height="385" loading="lazy" decoding="async" alt="Begrünter Innenhof der Wohnanlage Saarbrücker Straße in Berlin"></div>
-            <div class="tile__head"><h3>Saarbrücker Straße</h3></div>
-            <p class="tile__facts">Wohnungsbau, Berlin</p>
-          </a>
-      </div>
+  <section class="section" id="projekte" data-moment="photo-chapters" aria-labelledby="projekte-h">
+    <div class="wrap mo-ph">
+      <div class="mo-ph__head"><h2 id="projekte-h">Referenzen in Berlin, Deutschland und Europa</h2><p>Über 20 Jahre Erfahrung: In leitender Rolle haben wir mehr als 2.000 Wohneinheiten sowie Schulen und Gewerbebauten verantwortet. Fünf von sieben Projekten aus dieser Zeit. <a class="link" href="projekte.html">Alle Projekte ansehen</a></p></div>
+      <ol class="mo-ph__list">
+        <li class="mo-ph__ch">
+          <figure class="mo-ph__pic"><img src="assets/img/projekte/mehringdamm-wohnraum-stuck.webp" width="609" height="526" loading="lazy" decoding="async" alt="Sanierter Altbau-Wohnraum am Mehringdamm mit Stuck, Fischgrätparkett und Flügeltür"></figure>
+          <h3>Wohnungssanierung Mehringdamm, Berlin</h3>
+          <p>Sanierung einer Altbauwohnung mit Stuck, Fischgrätparkett und neuen Bädern.</p>
+        </li>
+        <li class="mo-ph__ch">
+          <figure class="mo-ph__pic"><img src="assets/img/projekte/saarbruecker-strasse-innenhof.webp" width="538" height="385" loading="lazy" decoding="async" alt="Begrünter Innenhof der Wohnanlage Saarbrücker Straße in Berlin"></figure>
+          <h3>Saarbrücker Straße, Berlin</h3>
+          <p>Wohnungsbau mit Klinkerfassade und begrüntem Innenhof.</p>
+        </li>
+        <li class="mo-ph__ch">
+          <figure class="mo-ph__pic"><img src="assets/img/projekte/spreedreieck-spree-abend.webp" width="609" height="523" loading="lazy" decoding="async" alt="Bürogebäude Spreedreieck an der Spree in Berlin am Abend"></figure>
+          <h3>Spreedreieck, Berlin-Mitte</h3>
+          <p>Büro- und Geschäftshaus direkt an der Spree.</p>
+        </li>
+        <li class="mo-ph__ch">
+          <figure class="mo-ph__pic"><img src="assets/img/projekte/boothub-atrium-von-oben.webp" width="607" height="526" loading="lazy" decoding="async" alt="Blick von oben auf die Sitztreppe im Atrium des Bürogebäudes BootHub in Potsdam"></figure>
+          <h3>BootHub, Potsdam</h3>
+          <p>Bürogebäude mit Atrium, Sitztreppe und Holztreppen.</p>
+        </li>
+        <li class="mo-ph__ch">
+          <figure class="mo-ph__pic"><img src="assets/img/projekte/cordee-des-alpes-aussenansicht.webp" width="757" height="652" loading="lazy" decoding="async" alt="Holzfassaden des Projekts Cordée des Alpes in Verbier im Schnee"></figure>
+          <h3>Cordée des Alpes, Verbier</h3>
+          <p>Innenausbau in der Schweiz mit Lounge, Spa und Schwimmbad.</p>
+        </li>
+      </ol>
     </div>
   </section>
 
@@ -399,8 +394,8 @@
             <li><span class="rows__name">4. Ausführungsplanung</span><p>Details, Maße, Materialien (LPH 5).</p></li>
             <li><span class="rows__name">5. Begleitung der Umsetzung</span><p>Qualität und Termine auf der Baustelle. <a href="leistungsphasen-hoai.html">Leistungsphasen 1 bis 9 ansehen</a></p></li>
         </ol>
-        <div class="frame frame--photo frame--fill span-6 start-7">
-          <img class="frame__img" src="assets/img/projekte/boothub-atrium-von-oben.webp" width="607" height="526" loading="lazy" decoding="async" alt="Blick von oben auf die Sitztreppe im Atrium des Bürogebäudes BootHub">
+        <div class="frame frame--photo frame--fill span-7 start-6">
+          <img class="frame__img" src="assets/img/projekte/spreedreieck-fassade.webp" width="643" height="865" loading="lazy" decoding="async" alt="Geschwungene Glasfassade des Bürogebäudes Spreedreieck in Berlin-Mitte">
         </div>
       </div>
     </div>
@@ -413,9 +408,8 @@
           <h2 id="fragen-h">Fragen zur Planung in Berlin</h2>
           <p class="muted">Vier Antworten zu Leistungen, Bauantrag, Kosten und Einsatzgebiet.</p>
           <p><a class="link" href="leistungen.html#fragen">Alle Fragen ansehen</a></p>
-          <div class="frame frame--photo fragen__foto"><img class="frame__img" src="assets/img/projekte/marienfelde-wohnung-innen.webp" width="676" height="393" loading="lazy" decoding="async" alt="Helle Wohnung mit offener Küche, Kamin und Holzboden im Projekt Marienfelde"></div>
         </div>
-        <div class="faq span-6 start-7">
+        <div class="faq span-7 start-6">
             <div class="faq__item"><h3>Was macht Sinke Planung?</h3><p>Sinke Planung ist ein Planungsbüro in Berlin. Wir übernehmen die architektonische Planung Ihres Bauvorhabens: vom ersten Entwurf über den Grundriss bis zur Begleitung der Umsetzung. Schwerpunkte sind Umbau und Sanierung, Anbau, Aufstockung und Dachausbau, Innenausbau und Umnutzung sowie Neubau.</p></div>
             <div class="faq__item"><h3>Übernehmen Sie auch den Bauantrag?</h3><p>Wir planen Ihr Vorhaben und begleiten es bis zur Umsetzung. Die Genehmigungsplanung erstellen wir gemeinsam mit bauvorlageberechtigten Partner:innen aus unserem <a href="partner.html">Netzwerk</a>, die den Bauantrag bei der Berliner Bauaufsicht einreichen. Für Sie bleibt es bei einem Ansprechpartner.</p></div>
             <div class="faq__item"><h3>Was kostet die Planung?</h3><p>Das Honorar richtet sich nach Größe und Schwierigkeit des Vorhabens und nach den beauftragten Leistungsphasen. Orientierung gibt die Honorarordnung HOAI: Bis zum Bauantrag, also in den <a href="leistungsphasen-hoai.html">Leistungsphasen 1 bis 4</a>, fallen 27 Prozent des Gesamthonorars an. Ein Angebot erstellen wir auf Anfrage.</p></div>
@@ -430,12 +424,8 @@
       <div class="grid grid--top">
         <div class="span-5 stack-4">
           <h2 id="anfrage-h">Projekt anfragen</h2>
-          <p>Schildern Sie kurz Ihr Vorhaben: Standort, Größenordnung und geplanter Zeitrahmen. Für die erste Einschätzung reichen wenige Sätze.</p>
-          <p class="muted">Erreichbar Montag bis Freitag, 9 bis 18 Uhr.</p>
-          <div class="frame frame--photo anfrage__foto"><img class="frame__img" src="assets/img/projekte/mehringdamm-kueche.webp" width="469" height="349" loading="lazy" decoding="async" alt="Neue Küche in einer sanierten Berliner Altbauwohnung am Mehringdamm"></div>
-        </div>
-        <div class="span-6 start-7 card">
-        <form class="form" name="kontakt" action="danke.html" method="post" data-netlify="true" netlify-honeypot="bot-field" data-endpoint="/" data-sent="Ihre Anfrage ist bei uns eingegangen. Wir melden uns innerhalb weniger Tage." novalidate>
+          <p>Schildern Sie kurz Ihr Vorhaben: Standort, Größenordnung und geplanter Zeitrahmen.</p>
+          <form class="form" name="kontakt" action="danke.html" method="post" data-netlify="true" netlify-honeypot="bot-field" data-endpoint="/" data-sent="Ihre Anfrage ist bei uns eingegangen. Wir melden uns innerhalb weniger Tage." novalidate>
           <input type="hidden" name="form-name" value="kontakt">
           <p hidden><label>Bitte nicht ausfüllen: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
           <div class="field"><label for="f-name">Name</label>
@@ -460,6 +450,9 @@
           <p class="form__status" role="status" data-form-status></p>
           <p class="t-small muted">Wir melden uns innerhalb weniger Tage.</p>
         </form>
+        </div>
+        <div class="frame frame--photo span-7 start-6 anfrage__foto">
+          <img class="frame__img" src="assets/img/projekte/glockenweiss-stadtvillen-garten.webp" width="610" height="525" loading="lazy" decoding="async" alt="Weiße Stadtvillen der Wohnanlage Glockenweiß im Grünen">
         </div>
       </div>
     </div>

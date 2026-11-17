@@ -38,14 +38,11 @@
 
 /* Handy: die Fotos neben den Listen behalten ihr Seitenverhältnis (nie größer als die Vorlage), der Abschnitt wächst mit */
 @media (max-width: 639px) {
-  #leistungen > .wrap > .fill, #ablauf > .wrap > .fill { flex: none; }
-  #leistungen .frame--fill, #ablauf .frame--fill { flex: none; height: auto; aspect-ratio: 4 / 3; }
+  #leistungen > .wrap > .fill, #ablauf > .wrap > .fill, #anfrage > .wrap > .fill { flex: none; }
+  #leistungen .frame--fill, #ablauf .frame--fill, #anfrage .frame--fill { flex: none; height: auto; aspect-ratio: 4 / 3; }
 }
-/* das Foto unter dem Anfragetext */
-.anfrage__foto { aspect-ratio: 4 / 3; }
 /* Tablet hochkant: gestapelte Abschnitte, die zwei Bildschirme brauchen */
 @media (min-width: 640px) and (max-width: 1023px) { #projekte, #anfrage { --h: 2; } }
-.fragen__foto { aspect-ratio: 4 / 3; }
 /* sehr flache Fenster (kleine Laptops): Abschnitte dürfen mit ihrem Inhalt wachsen, damit nichts übereinanderliegt */
 @media (min-width: 1024px) and (max-height: 880px) {
   main > section:not(.hero), footer.closing { height: auto; min-height: calc(var(--h, 1) * 100svh); }
@@ -112,7 +109,14 @@ main.flow .section-head h2, main.flow .stack-4 > h2 { text-wrap: balance; }
 .doc__body th { font-weight: 500; font-size: var(--t-small); color: var(--muted); }
 .doc__body td:last-child, .doc__body th:last-child { text-align: right; padding-right: 0; white-space: nowrap; }
 /* Startseite: vier Referenzfotos unter dem Erfahrungs-Satz */
-.wall { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2px; border-radius: var(--r-lg); overflow: hidden; }
-.wall > img { width: 100%; height: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; }
-@media (max-width: 639px) { .wall { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-.erfahrung__fotos { margin-top: 48px; }
+
+/* Projektseite: große Bilder im Wechselraster (7/5, dann 5/7 Spalten) */
+.bildraster { row-gap: var(--gutter, 24px); }
+.bildraster > .frame { height: clamp(260px, 34vw, 480px); }
+@media (min-width: 640px) { .bildraster > .span-7 { grid-column: span 7; } .bildraster > .span-5 { grid-column: span 5; } }
+@media (max-width: 639px) { .bildraster > .frame { height: auto; aspect-ratio: 4 / 3; } }
+/* Formular direkt auf dem Seitengrund (ohne Karte) */
+.stack-4 > .form { margin-top: var(--s-6, 32px); }
+/* Anfrage: das Foto so hoch wie das Formular daneben */
+.anfrage__foto { align-self: stretch; min-height: 420px; }
+@media (max-width: 639px) { .anfrage__foto { min-height: 0; aspect-ratio: 4 / 3; } }
